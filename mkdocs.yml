@@ -1,0 +1,43 @@
+site_name: Anti-Canape Docs
+site_author: Chris Hinkson
+site_description: Club Car Anti-Canape Framework
+
+theme:
+  name: "material"
+
+plugins:
+  - mkdocstrings
+
+repo_url: https://github.com/chrisInTheCode/CC-Anti-Canape
+
+nav:
+  - Overview: index.md
+  - Tutorials: tutorials.md
+  - How-To Guides:
+    - CAN Messages:
+      - Writing CAN Messages: how-to-guides/writingCanMsg.md
+      - Reading CAN Messages: how-to-guides/readingCanMsg.md
+    - SDO Messages:
+      - Writing SDO Messages: how-to-guides/writingSdoParam.md
+      - Reading SDO Messages: how-to-guides/readingSdoParam.md
+      - Get SDO Response Message: how-to-guides/gettingSdoResponse.md
+    - Script Manager:
+      - Getting a CAN Bus: how-to-guides/automatorGetABus.md
+      - Writing a SDO Dictionary: how-to-guides/writingSdoDict.md
+      - Reading a SDO List: how-to-guides/readingSdoList.md
+      - Adding to the Script Manager: how-to-guides/addAScript.md
+      - Running a Script: how-to-guides/runAScript.md
+    - DBC and DOT:
+      - Load a new DBC file: how-to-guides/loadDbc.md
+      - Load a new DOT file: how-to-guides/loadDot.md
+      - Load saved DBC dictionaries: how-to-guides/loadSavedDbcDictionaries.md
+      - Load saved DOT dictionaries: how-to-guides/loadSavedDotDictionaries.md
+      - Get CAN Message: how-to-guides/getSignalDictionary.md
+      - Get SDO Index: how-to-guides/getSdoIndex.md
+  - Library API:
+    - Automator: api/automator.md
+    - Reader: api/readers.md
+    - Writer: api/writers.md
+    - DBC Parse: api/dbcAutoParse.md
+    - DOT Parse: api/dotAutoParse.md
+  - Project Background: explanation.md
