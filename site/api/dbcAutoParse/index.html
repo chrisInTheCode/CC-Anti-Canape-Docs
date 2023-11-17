@@ -1,0 +1,3886 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../writers/">
+      
+      
+        <link rel="next" href="../dotAutoParse/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.8">
+    
+    
+      
+        <title>DBC Parse - Anti-Canape Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4b4a2bd9.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#drivers.dbcAutoParse" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Anti-Canape Docs" class="md-header__button md-logo" aria-label="Anti-Canape Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Anti-Canape Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              DBC Parse
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Anti-Canape Docs" class="md-nav__button md-logo" aria-label="Anti-Canape Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Anti-Canape Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    How-To Guides
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            How-To Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    CAN Messages
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            CAN Messages
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-guides/writingCanMsg/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Writing CAN Messages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-guides/readingCanMsg/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reading CAN Messages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    SDO Messages
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            SDO Messages
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-guides/writingSdoParam/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Writing SDO Messages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-guides/readingSdoParam/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reading SDO Messages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-guides/gettingSdoResponse/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get SDO Response Message
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Script Manager
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Script Manager
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-guides/automatorGetABus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting a CAN Bus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-guides/writingSdoDict/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Writing a SDO Dictionary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-guides/readingSdoList/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reading a SDO List
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-guides/addAScript/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adding to the Script Manager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-guides/runAScript/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Running a Script
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    DBC and DOT
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            DBC and DOT
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-guides/loadDbc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Load a new DBC file
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-guides/loadDot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Load a new DOT file
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-guides/loadSavedDbcDictionaries/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Load saved DBC dictionaries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-guides/loadSavedDotDictionaries/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Load saved DOT dictionaries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-guides/getSignalDictionary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get CAN Message
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-guides/getSdoIndex/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get SDO Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Library API
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Library API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../automator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Automator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../readers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reader
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../writers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Writer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    DBC Parse
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    DBC Parse
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#drivers.dbcAutoParse" class="md-nav__link">
+    dbcAutoParse
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#drivers.dbcAutoParse.dbcParse" class="md-nav__link">
+    dbcParse
+  </a>
+  
+    <nav class="md-nav" aria-label="dbcParse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#drivers.dbcAutoParse.dbcParse.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.dbcAutoParse.dbcParse.dumpDictionaries" class="md-nav__link">
+    dumpDictionaries()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.dbcAutoParse.dbcParse.getCycleTimeById" class="md-nav__link">
+    getCycleTimeById()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.dbcAutoParse.dbcParse.getDbcName" class="md-nav__link">
+    getDbcName()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.dbcAutoParse.dbcParse.getDbcPath" class="md-nav__link">
+    getDbcPath()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.dbcAutoParse.dbcParse.getDescriptionBySignalName" class="md-nav__link">
+    getDescriptionBySignalName()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.dbcAutoParse.dbcParse.getIdBySignalName" class="md-nav__link">
+    getIdBySignalName()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.dbcAutoParse.dbcParse.getMaxBySignal" class="md-nav__link">
+    getMaxBySignal()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.dbcAutoParse.dbcParse.getMessageById" class="md-nav__link">
+    getMessageById()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.dbcAutoParse.dbcParse.getMessageBySignalName" class="md-nav__link">
+    getMessageBySignalName()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.dbcAutoParse.dbcParse.getMinBySignal" class="md-nav__link">
+    getMinBySignal()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.dbcAutoParse.dbcParse.getSendTypeById" class="md-nav__link">
+    getSendTypeById()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.dbcAutoParse.dbcParse.loadDictionaries" class="md-nav__link">
+    loadDictionaries()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.dbcAutoParse.dbcParse.parseNewDBC" class="md-nav__link">
+    parseNewDBC()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dotAutoParse/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DOT Parse
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explanation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Project Background
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#drivers.dbcAutoParse" class="md-nav__link">
+    dbcAutoParse
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#drivers.dbcAutoParse.dbcParse" class="md-nav__link">
+    dbcParse
+  </a>
+  
+    <nav class="md-nav" aria-label="dbcParse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#drivers.dbcAutoParse.dbcParse.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.dbcAutoParse.dbcParse.dumpDictionaries" class="md-nav__link">
+    dumpDictionaries()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.dbcAutoParse.dbcParse.getCycleTimeById" class="md-nav__link">
+    getCycleTimeById()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.dbcAutoParse.dbcParse.getDbcName" class="md-nav__link">
+    getDbcName()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.dbcAutoParse.dbcParse.getDbcPath" class="md-nav__link">
+    getDbcPath()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.dbcAutoParse.dbcParse.getDescriptionBySignalName" class="md-nav__link">
+    getDescriptionBySignalName()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.dbcAutoParse.dbcParse.getIdBySignalName" class="md-nav__link">
+    getIdBySignalName()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.dbcAutoParse.dbcParse.getMaxBySignal" class="md-nav__link">
+    getMaxBySignal()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.dbcAutoParse.dbcParse.getMessageById" class="md-nav__link">
+    getMessageById()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.dbcAutoParse.dbcParse.getMessageBySignalName" class="md-nav__link">
+    getMessageBySignalName()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.dbcAutoParse.dbcParse.getMinBySignal" class="md-nav__link">
+    getMinBySignal()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.dbcAutoParse.dbcParse.getSendTypeById" class="md-nav__link">
+    getSendTypeById()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.dbcAutoParse.dbcParse.loadDictionaries" class="md-nav__link">
+    loadDictionaries()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.dbcAutoParse.dbcParse.parseNewDBC" class="md-nav__link">
+    parseNewDBC()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>DBC Parse</h1>
+
+<p><strong>CC Anti-Canape: CC DBC Parsing Application</strong></p>
+<p>Author: Chris Hinkson<br />
+   Email: Christopher.Hinkson@clubcar.com  </p>
+<p>Desc: This application is designed to parse a Club Car DBC file and save the data as json files for easy interaction with python dictionaries. This will make it
+         easier to use CAN communication in python, specifically writing.  </p>
+<p>Github: https://github.com/chrisInTheCode/CC-DBC-AutoParse<br />
+   --&gt; To get access to the github repository, please send me an email at the above address  </p>
+<p>References:<br />
+   --&gt; https://docs.python.org/3/library/json.html<br />
+   --&gt; https://docs.python.org/3/library/os.html<br />
+   --&gt; https://docs.python.org/3/library/collections.html#collections.defaultdict  </p>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="drivers.dbcAutoParse"></a>
+  <div class="doc doc-contents first">
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+
+<h2 id="drivers.dbcAutoParse.dbcParse" class="doc doc-heading">
+          <code>dbcParse</code>
+
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+
+  
+      <p>The application presents a central dbcParse() class that can be used as a parsed-dbc directory. It includes the following features:
+- Initialization of empty dictionaries to declare space usage along with empty variable lookup
+- parseNewDBC(filepath) method to load a given DBC into all of the dictionaries
+- dumpDictionaries() method to save the current dictionaries as json files in the 'dictionaries' folder
+- loadDictionaries() method to load the json files in the 'dictionaries' folder as current dictionaries
+- getIDBySignalName(signalName), getMessageBySignalName(signalName), and getMessageByID(ID) methods to assist in message/ID lookup
+- Storage of all parsed data in dictionaries for the duration of the class instance
+- Optional saving and loading of dictionaries as json files for easier lookup</p>
+
+
+
+<p><strong>Examples:</strong></p>
+    <p>currentDBC = dbcParse()
+currentDBC.parseNewDBC("ccPythonDBC.dbc")
+currentDBC.dumpDictionaries()</p>
+
+
+
+  <p><strong>Attributes:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>version</code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The version of the DBC - specified in the first line of the DBC.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>dbcPath</code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The file path to the DBC loaded into the instance (if DBC is loaded).</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>dbcName</code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The name of the DBC loaded into the instance (if DBC is loaded).</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>idToSignals</code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dictionary mapping ID's to signals.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>idToSignalDescriptions</code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dictionary mapping ID's to signal descriptions.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>idToSendType</code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dictionary mapping ID's to send types.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>idToCycleTime</code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dictionary mapping ID's to cycle times.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>signalsToId</code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dictionary mapping signals to ID's.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>signalsToMin</code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dictionary mapping signals to minimum values.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>signalsToMax</code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Dictionary mapping signals to maximum values.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+            <details class="quote">
+              <summary>Source code in <code>drivers\dbcAutoParse.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 30</span>
+<span class="normal"> 31</span>
+<span class="normal"> 32</span>
+<span class="normal"> 33</span>
+<span class="normal"> 34</span>
+<span class="normal"> 35</span>
+<span class="normal"> 36</span>
+<span class="normal"> 37</span>
+<span class="normal"> 38</span>
+<span class="normal"> 39</span>
+<span class="normal"> 40</span>
+<span class="normal"> 41</span>
+<span class="normal"> 42</span>
+<span class="normal"> 43</span>
+<span class="normal"> 44</span>
+<span class="normal"> 45</span>
+<span class="normal"> 46</span>
+<span class="normal"> 47</span>
+<span class="normal"> 48</span>
+<span class="normal"> 49</span>
+<span class="normal"> 50</span>
+<span class="normal"> 51</span>
+<span class="normal"> 52</span>
+<span class="normal"> 53</span>
+<span class="normal"> 54</span>
+<span class="normal"> 55</span>
+<span class="normal"> 56</span>
+<span class="normal"> 57</span>
+<span class="normal"> 58</span>
+<span class="normal"> 59</span>
+<span class="normal"> 60</span>
+<span class="normal"> 61</span>
+<span class="normal"> 62</span>
+<span class="normal"> 63</span>
+<span class="normal"> 64</span>
+<span class="normal"> 65</span>
+<span class="normal"> 66</span>
+<span class="normal"> 67</span>
+<span class="normal"> 68</span>
+<span class="normal"> 69</span>
+<span class="normal"> 70</span>
+<span class="normal"> 71</span>
+<span class="normal"> 72</span>
+<span class="normal"> 73</span>
+<span class="normal"> 74</span>
+<span class="normal"> 75</span>
+<span class="normal"> 76</span>
+<span class="normal"> 77</span>
+<span class="normal"> 78</span>
+<span class="normal"> 79</span>
+<span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span>
+<span class="normal">145</span>
+<span class="normal">146</span>
+<span class="normal">147</span>
+<span class="normal">148</span>
+<span class="normal">149</span>
+<span class="normal">150</span>
+<span class="normal">151</span>
+<span class="normal">152</span>
+<span class="normal">153</span>
+<span class="normal">154</span>
+<span class="normal">155</span>
+<span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span>
+<span class="normal">159</span>
+<span class="normal">160</span>
+<span class="normal">161</span>
+<span class="normal">162</span>
+<span class="normal">163</span>
+<span class="normal">164</span>
+<span class="normal">165</span>
+<span class="normal">166</span>
+<span class="normal">167</span>
+<span class="normal">168</span>
+<span class="normal">169</span>
+<span class="normal">170</span>
+<span class="normal">171</span>
+<span class="normal">172</span>
+<span class="normal">173</span>
+<span class="normal">174</span>
+<span class="normal">175</span>
+<span class="normal">176</span>
+<span class="normal">177</span>
+<span class="normal">178</span>
+<span class="normal">179</span>
+<span class="normal">180</span>
+<span class="normal">181</span>
+<span class="normal">182</span>
+<span class="normal">183</span>
+<span class="normal">184</span>
+<span class="normal">185</span>
+<span class="normal">186</span>
+<span class="normal">187</span>
+<span class="normal">188</span>
+<span class="normal">189</span>
+<span class="normal">190</span>
+<span class="normal">191</span>
+<span class="normal">192</span>
+<span class="normal">193</span>
+<span class="normal">194</span>
+<span class="normal">195</span>
+<span class="normal">196</span>
+<span class="normal">197</span>
+<span class="normal">198</span>
+<span class="normal">199</span>
+<span class="normal">200</span>
+<span class="normal">201</span>
+<span class="normal">202</span>
+<span class="normal">203</span>
+<span class="normal">204</span>
+<span class="normal">205</span>
+<span class="normal">206</span>
+<span class="normal">207</span>
+<span class="normal">208</span>
+<span class="normal">209</span>
+<span class="normal">210</span>
+<span class="normal">211</span>
+<span class="normal">212</span>
+<span class="normal">213</span>
+<span class="normal">214</span>
+<span class="normal">215</span>
+<span class="normal">216</span>
+<span class="normal">217</span>
+<span class="normal">218</span>
+<span class="normal">219</span>
+<span class="normal">220</span>
+<span class="normal">221</span>
+<span class="normal">222</span>
+<span class="normal">223</span>
+<span class="normal">224</span>
+<span class="normal">225</span>
+<span class="normal">226</span>
+<span class="normal">227</span>
+<span class="normal">228</span>
+<span class="normal">229</span>
+<span class="normal">230</span>
+<span class="normal">231</span>
+<span class="normal">232</span>
+<span class="normal">233</span>
+<span class="normal">234</span>
+<span class="normal">235</span>
+<span class="normal">236</span>
+<span class="normal">237</span>
+<span class="normal">238</span>
+<span class="normal">239</span>
+<span class="normal">240</span>
+<span class="normal">241</span>
+<span class="normal">242</span>
+<span class="normal">243</span>
+<span class="normal">244</span>
+<span class="normal">245</span>
+<span class="normal">246</span>
+<span class="normal">247</span>
+<span class="normal">248</span>
+<span class="normal">249</span>
+<span class="normal">250</span>
+<span class="normal">251</span>
+<span class="normal">252</span>
+<span class="normal">253</span>
+<span class="normal">254</span>
+<span class="normal">255</span>
+<span class="normal">256</span>
+<span class="normal">257</span>
+<span class="normal">258</span>
+<span class="normal">259</span>
+<span class="normal">260</span>
+<span class="normal">261</span>
+<span class="normal">262</span>
+<span class="normal">263</span>
+<span class="normal">264</span>
+<span class="normal">265</span>
+<span class="normal">266</span>
+<span class="normal">267</span>
+<span class="normal">268</span>
+<span class="normal">269</span>
+<span class="normal">270</span>
+<span class="normal">271</span>
+<span class="normal">272</span>
+<span class="normal">273</span>
+<span class="normal">274</span>
+<span class="normal">275</span>
+<span class="normal">276</span>
+<span class="normal">277</span>
+<span class="normal">278</span>
+<span class="normal">279</span>
+<span class="normal">280</span>
+<span class="normal">281</span>
+<span class="normal">282</span>
+<span class="normal">283</span>
+<span class="normal">284</span>
+<span class="normal">285</span>
+<span class="normal">286</span>
+<span class="normal">287</span>
+<span class="normal">288</span>
+<span class="normal">289</span>
+<span class="normal">290</span>
+<span class="normal">291</span>
+<span class="normal">292</span>
+<span class="normal">293</span>
+<span class="normal">294</span>
+<span class="normal">295</span>
+<span class="normal">296</span>
+<span class="normal">297</span>
+<span class="normal">298</span>
+<span class="normal">299</span>
+<span class="normal">300</span>
+<span class="normal">301</span>
+<span class="normal">302</span>
+<span class="normal">303</span>
+<span class="normal">304</span>
+<span class="normal">305</span>
+<span class="normal">306</span>
+<span class="normal">307</span>
+<span class="normal">308</span>
+<span class="normal">309</span>
+<span class="normal">310</span>
+<span class="normal">311</span>
+<span class="normal">312</span>
+<span class="normal">313</span>
+<span class="normal">314</span>
+<span class="normal">315</span>
+<span class="normal">316</span>
+<span class="normal">317</span>
+<span class="normal">318</span>
+<span class="normal">319</span>
+<span class="normal">320</span>
+<span class="normal">321</span>
+<span class="normal">322</span>
+<span class="normal">323</span>
+<span class="normal">324</span>
+<span class="normal">325</span>
+<span class="normal">326</span>
+<span class="normal">327</span>
+<span class="normal">328</span>
+<span class="normal">329</span>
+<span class="normal">330</span>
+<span class="normal">331</span>
+<span class="normal">332</span>
+<span class="normal">333</span>
+<span class="normal">334</span>
+<span class="normal">335</span>
+<span class="normal">336</span>
+<span class="normal">337</span>
+<span class="normal">338</span>
+<span class="normal">339</span>
+<span class="normal">340</span>
+<span class="normal">341</span>
+<span class="normal">342</span>
+<span class="normal">343</span>
+<span class="normal">344</span>
+<span class="normal">345</span>
+<span class="normal">346</span>
+<span class="normal">347</span>
+<span class="normal">348</span>
+<span class="normal">349</span>
+<span class="normal">350</span>
+<span class="normal">351</span>
+<span class="normal">352</span>
+<span class="normal">353</span>
+<span class="normal">354</span>
+<span class="normal">355</span>
+<span class="normal">356</span>
+<span class="normal">357</span>
+<span class="normal">358</span>
+<span class="normal">359</span>
+<span class="normal">360</span>
+<span class="normal">361</span>
+<span class="normal">362</span>
+<span class="normal">363</span>
+<span class="normal">364</span>
+<span class="normal">365</span>
+<span class="normal">366</span>
+<span class="normal">367</span>
+<span class="normal">368</span>
+<span class="normal">369</span>
+<span class="normal">370</span>
+<span class="normal">371</span>
+<span class="normal">372</span>
+<span class="normal">373</span>
+<span class="normal">374</span>
+<span class="normal">375</span>
+<span class="normal">376</span>
+<span class="normal">377</span>
+<span class="normal">378</span>
+<span class="normal">379</span>
+<span class="normal">380</span>
+<span class="normal">381</span>
+<span class="normal">382</span>
+<span class="normal">383</span>
+<span class="normal">384</span>
+<span class="normal">385</span>
+<span class="normal">386</span>
+<span class="normal">387</span>
+<span class="normal">388</span>
+<span class="normal">389</span>
+<span class="normal">390</span>
+<span class="normal">391</span>
+<span class="normal">392</span>
+<span class="normal">393</span>
+<span class="normal">394</span>
+<span class="normal">395</span>
+<span class="normal">396</span>
+<span class="normal">397</span>
+<span class="normal">398</span>
+<span class="normal">399</span>
+<span class="normal">400</span>
+<span class="normal">401</span>
+<span class="normal">402</span>
+<span class="normal">403</span>
+<span class="normal">404</span>
+<span class="normal">405</span>
+<span class="normal">406</span>
+<span class="normal">407</span>
+<span class="normal">408</span>
+<span class="normal">409</span>
+<span class="normal">410</span>
+<span class="normal">411</span>
+<span class="normal">412</span>
+<span class="normal">413</span>
+<span class="normal">414</span>
+<span class="normal">415</span>
+<span class="normal">416</span>
+<span class="normal">417</span>
+<span class="normal">418</span>
+<span class="normal">419</span>
+<span class="normal">420</span>
+<span class="normal">421</span>
+<span class="normal">422</span>
+<span class="normal">423</span>
+<span class="normal">424</span>
+<span class="normal">425</span>
+<span class="normal">426</span>
+<span class="normal">427</span>
+<span class="normal">428</span>
+<span class="normal">429</span>
+<span class="normal">430</span>
+<span class="normal">431</span>
+<span class="normal">432</span>
+<span class="normal">433</span>
+<span class="normal">434</span>
+<span class="normal">435</span>
+<span class="normal">436</span>
+<span class="normal">437</span>
+<span class="normal">438</span>
+<span class="normal">439</span>
+<span class="normal">440</span>
+<span class="normal">441</span>
+<span class="normal">442</span>
+<span class="normal">443</span>
+<span class="normal">444</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">dbcParse</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39; The application presents a central dbcParse() class that can be used as a parsed-dbc directory. It includes the following features:</span>
+<span class="sd">    - Initialization of empty dictionaries to declare space usage along with empty variable lookup</span>
+<span class="sd">    - parseNewDBC(filepath) method to load a given DBC into all of the dictionaries</span>
+<span class="sd">    - dumpDictionaries() method to save the current dictionaries as json files in the &#39;dictionaries&#39; folder</span>
+<span class="sd">    - loadDictionaries() method to load the json files in the &#39;dictionaries&#39; folder as current dictionaries</span>
+<span class="sd">    - getIDBySignalName(signalName), getMessageBySignalName(signalName), and getMessageByID(ID) methods to assist in message/ID lookup</span>
+<span class="sd">    - Storage of all parsed data in dictionaries for the duration of the class instance</span>
+<span class="sd">    - Optional saving and loading of dictionaries as json files for easier lookup</span>
+
+<span class="sd">    Examples:</span>
+<span class="sd">        currentDBC = dbcParse()</span>
+<span class="sd">        currentDBC.parseNewDBC(&quot;ccPythonDBC.dbc&quot;)</span>
+<span class="sd">        currentDBC.dumpDictionaries()</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        version: The version of the DBC - specified in the first line of the DBC.</span>
+<span class="sd">        dbcPath: The file path to the DBC loaded into the instance (if DBC is loaded).</span>
+<span class="sd">        dbcName: The name of the DBC loaded into the instance (if DBC is loaded).</span>
+<span class="sd">        idToSignals: Dictionary mapping ID&#39;s to signals.</span>
+<span class="sd">        idToSignalDescriptions: Dictionary mapping ID&#39;s to signal descriptions.</span>
+<span class="sd">        idToSendType: Dictionary mapping ID&#39;s to send types.</span>
+<span class="sd">        idToCycleTime: Dictionary mapping ID&#39;s to cycle times.</span>
+<span class="sd">        signalsToId: Dictionary mapping signals to ID&#39;s.</span>
+<span class="sd">        signalsToMin: Dictionary mapping signals to minimum values.</span>
+<span class="sd">        signalsToMax: Dictionary mapping signals to maximum values.</span>
+<span class="sd">    &#39;&#39;&#39;</span>    
+    <span class="c1">########################</span>
+    <span class="c1"># CLASS INITIALIZATION #</span>
+    <span class="c1">########################</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&#39;&#39;&#39; Initializes the class upon instance creation.</span>
+<span class="sd">        &#39;&#39;&#39;</span>        
+        <span class="bp">self</span><span class="o">.</span><span class="n">version</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dbcPath</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dbcName</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">idToSignals</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">dict</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">idToSignalDescriptions</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">dict</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">idToSendType</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">idToCycleTime</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">signalsToId</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">signalsToMin</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">signalsToMax</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+
+
+    <span class="c1">##############</span>
+    <span class="c1"># DBC LOADER #</span>
+    <span class="c1">##############</span>
+    <span class="k">def</span> <span class="nf">parseNewDBC</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filePath</span><span class="p">:</span><span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&#39;&#39;&#39; Parses a DBC file and loads all information into instance-based dictionaries.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            filePath (str): The Path to the DBC file to parse.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            bool: True if execution completed with no errors, False otherwise.</span>
+<span class="sd">        &#39;&#39;&#39;</span>        
+        <span class="c1"># Save the dbc path</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dbcPath</span> <span class="o">=</span> <span class="n">filePath</span>
+        <span class="c1"># Save the dbc name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dbcName</span> <span class="o">=</span> <span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dbcPath</span><span class="p">)</span>
+
+        <span class="c1"># [https://docs.python.org/3/library/functions.html#open]</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file</span><span class="o">=</span><span class="n">filePath</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">dbcFile</span><span class="p">:</span>
+            <span class="n">latestAddedID</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+            <span class="n">latestAddedDescriptionID</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+            <span class="n">latestAddedDescriptionSignal</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+            <span class="n">latestAddedDescriptionFlag</span> <span class="o">=</span> <span class="kc">False</span>
+
+            <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">dbcFile</span><span class="p">:</span>
+                <span class="c1"># Strip the line of beginning / ending whitespace</span>
+                <span class="c1"># [https://www.geeksforgeeks.org/python-string-strip/]</span>
+                <span class="n">strippedLine</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+                <span class="c1"># Split the line into an array</span>
+                <span class="c1"># [https://www.geeksforgeeks.org/python-string-split/]</span>
+                <span class="n">lineComponents</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+
+                <span class="c1"># Handle empty lines</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="n">lineComponents</span><span class="p">:</span>
+                    <span class="k">continue</span>
+
+                <span class="c1"># Detect version line</span>
+                <span class="k">if</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;VERSION&quot;</span><span class="p">:</span>
+                    <span class="c1"># Save the version</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">version</span> <span class="o">=</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+                    <span class="c1"># Go to the next line in the file</span>
+                    <span class="k">continue</span>
+                <span class="c1"># Detect a new ID</span>
+                <span class="k">elif</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;BO_&quot;</span><span class="p">:</span>
+                    <span class="c1"># Create a new key in the idToSignals dictionary</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">idToSignals</span><span class="p">[</span><span class="n">lineComponents</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span> <span class="o">=</span> <span class="p">{}</span>
+                    <span class="c1"># Save ID for adding signals</span>
+                    <span class="n">latestAddedID</span> <span class="o">=</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+                    <span class="c1"># Go to the next line in the file</span>
+                    <span class="k">continue</span>
+
+
+                <span class="c1"># Detect a new signal</span>
+                <span class="k">elif</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;SG_&quot;</span><span class="p">:</span>
+                    <span class="c1"># Add the signal to the signalsToId dictionary</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">signalsToId</span><span class="p">[</span><span class="n">lineComponents</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span> <span class="o">=</span> <span class="n">latestAddedID</span>
+
+                    <span class="c1"># Get the min and max</span>
+                    <span class="n">signalValueRange</span> <span class="o">=</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">&quot;[]&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;|&quot;</span><span class="p">)</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">signalsToMin</span><span class="p">[</span><span class="n">lineComponents</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">signalValueRange</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">signalsToMax</span><span class="p">[</span><span class="n">lineComponents</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">signalValueRange</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+                    <span class="c1"># Add the signal to the dictionary of the latest ID parsed, with the value being the signal min</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">idToSignals</span><span class="p">[</span><span class="n">latestAddedID</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="n">lineComponents</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="nb">float</span><span class="p">(</span><span class="n">signalValueRange</span><span class="p">[</span><span class="mi">0</span><span class="p">])})</span>
+
+
+                    <span class="c1"># Go to the next line in the file</span>
+                    <span class="k">continue</span>
+
+                <span class="c1"># Detect a new description</span>
+                <span class="k">elif</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;CM_&quot;</span><span class="p">:</span>
+                    <span class="c1"># Detect a description for a ID</span>
+                    <span class="k">if</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;BO_&quot;</span><span class="p">:</span>
+                        <span class="n">currentDescription</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+                        <span class="c1"># Get the total description, which may have spaces and therefor was split up into the array</span>
+                        <span class="k">for</span> <span class="n">descriptionPartCount</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lineComponents</span><span class="p">)</span> <span class="o">-</span> <span class="mi">3</span><span class="p">):</span>
+                            <span class="n">currentDescription</span> <span class="o">=</span> <span class="n">currentDescription</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">lineComponents</span><span class="p">[</span><span class="n">descriptionPartCount</span> <span class="o">+</span> <span class="mi">3</span><span class="p">]</span>
+                        <span class="c1"># Save the ID and description to the dictionary</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">idToSignalDescriptions</span><span class="p">[</span><span class="n">lineComponents</span><span class="p">[</span><span class="mi">2</span><span class="p">]][</span><span class="n">lineComponents</span><span class="p">[</span><span class="mi">2</span><span class="p">]]</span> <span class="o">=</span> <span class="n">currentDescription</span>
+                        <span class="c1"># Save the ID as last added (and as the latest signal for placeholder)</span>
+                        <span class="n">latestAddedDescriptionID</span> <span class="o">=</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+                        <span class="n">latestAddedDescriptionSignal</span> <span class="o">=</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+                        <span class="c1"># Go to the next line in the file</span>
+                        <span class="k">continue</span>
+
+                    <span class="c1"># Detect a description for a signal</span>
+                    <span class="k">elif</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;SG_&quot;</span><span class="p">:</span>
+                        <span class="n">currentDescription</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+                        <span class="c1"># Get the total description, which may have spaces and therefor was split up into the array</span>
+                        <span class="k">for</span> <span class="n">descriptionPartCount</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lineComponents</span><span class="p">)</span> <span class="o">-</span> <span class="mi">4</span><span class="p">):</span>
+                            <span class="n">currentDescription</span> <span class="o">=</span> <span class="n">currentDescription</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">lineComponents</span><span class="p">[</span><span class="n">descriptionPartCount</span> <span class="o">+</span> <span class="mi">4</span><span class="p">]</span>
+                        <span class="c1"># Add the signal and description to the dictionary</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">idToSignalDescriptions</span><span class="p">[</span><span class="n">lineComponents</span><span class="p">[</span><span class="mi">2</span><span class="p">]][</span><span class="n">lineComponents</span><span class="p">[</span><span class="mi">3</span><span class="p">]]</span> <span class="o">=</span> <span class="n">currentDescription</span>
+                        <span class="c1"># Save the ID as last added ID and signal as last added signal</span>
+                        <span class="n">latestAddedDescriptionID</span> <span class="o">=</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+                        <span class="n">latestAddedDescriptionSignal</span> <span class="o">=</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+
+                        <span class="c1"># If the description is continued on next line, there will not be a semicolon</span>
+                        <span class="k">if</span> <span class="n">currentDescription</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;;&#39;</span><span class="p">:</span>
+                            <span class="c1"># Set flag for next line</span>
+                            <span class="n">latestAddedDescriptionFlag</span> <span class="o">=</span> <span class="kc">True</span>
+
+                        <span class="c1"># Go to the next line in the file</span>
+                        <span class="k">continue</span>
+
+                <span class="c1"># Detect a continued description</span>
+                <span class="k">elif</span> <span class="n">latestAddedDescriptionFlag</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
+                    <span class="c1"># Get the description so far for the signal</span>
+                    <span class="n">currentDescription</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">idToSignalDescriptions</span><span class="p">[</span><span class="n">latestAddedDescriptionID</span><span class="p">][</span><span class="n">latestAddedDescriptionSignal</span><span class="p">]</span>
+                    <span class="c1"># For all the parts of the current line, add them to the description</span>
+                    <span class="k">for</span> <span class="n">descriptionPartCount</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lineComponents</span><span class="p">)):</span>
+                        <span class="n">currentDescription</span> <span class="o">=</span> <span class="n">currentDescription</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">lineComponents</span><span class="p">[</span><span class="n">descriptionPartCount</span><span class="p">]</span>
+                    <span class="c1"># Add the description back to the dictionary</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">idToSignalDescriptions</span><span class="p">[</span><span class="n">latestAddedDescriptionID</span><span class="p">][</span><span class="n">latestAddedDescriptionSignal</span><span class="p">]</span> <span class="o">=</span> <span class="n">currentDescription</span>
+
+                    <span class="c1"># Check if this line was the last line of the description</span>
+                    <span class="k">if</span> <span class="n">currentDescription</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;;&#39;</span><span class="p">:</span>
+                        <span class="c1"># Reset flag</span>
+                        <span class="n">latestAddedDescriptionFlag</span> <span class="o">=</span> <span class="kc">False</span>
+
+                    <span class="c1"># Go to the next line in the file</span>
+                    <span class="k">continue</span>
+
+                <span class="c1"># Detect a new message send type or cycle time</span>
+                <span class="k">elif</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;BA_&quot;</span><span class="p">:</span>
+                    <span class="c1"># If it is cycle time (DBC places var name in &quot;&quot;)</span>
+                    <span class="k">if</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;&quot;GenMsgCycleTime&quot;&#39;</span><span class="p">:</span>
+                        <span class="c1"># Add the ID and cycle time to dictionary</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">idToCycleTime</span><span class="p">[</span><span class="n">lineComponents</span><span class="p">[</span><span class="mi">3</span><span class="p">]]</span> <span class="o">=</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+                        <span class="c1"># Go to the next line in the file</span>
+                        <span class="k">continue</span>
+                    <span class="c1"># If it is send type (DBC places var name in &quot;&quot;)</span>
+                    <span class="k">elif</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;&quot;GenMsgSendType&quot;&#39;</span><span class="p">:</span>
+                        <span class="c1"># Add the ID and send type to dictionary</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">idToSendType</span><span class="p">[</span><span class="n">lineComponents</span><span class="p">[</span><span class="mi">3</span><span class="p">]]</span> <span class="o">=</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+                        <span class="c1"># Go to the next line in the file</span>
+                        <span class="k">continue</span>
+
+
+                <span class="c1">#TODO: Figure out what VAL_ is, and add support for it</span>
+                <span class="c1">#TODO: Figure out what VAL_TABLE_ is, and add support for it</span>
+        <span class="k">return</span> <span class="kc">True</span>
+
+
+    <span class="c1">#############################</span>
+    <span class="c1"># SAVE DICTIONARIES TO JSON #</span>
+    <span class="c1">#############################</span>
+    <span class="k">def</span> <span class="nf">dumpDictionaries</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&#39;&#39;&#39;Saves (dumps) the current instance&#39;s dictionaries into the json save files located in the &#39;dictionaries&#39; folder.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            bool: True if execution completed with no errors, False otherwise.</span>
+<span class="sd">        &#39;&#39;&#39;</span>        
+        <span class="c1"># [https://www.geeksforgeeks.org/create-a-directory-in-python/]</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">mkdir</span><span class="p">(</span><span class="s2">&quot;dictionaries&quot;</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">OSError</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CC DBC-AutoParse: Dictionary Directory Already Exists!&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Save the idToSignals Dictionary</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dictionaries</span><span class="se">\\</span><span class="s1">idToSignals.json&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">outputFileIdToSignals</span><span class="p">:</span>
+            <span class="c1"># [https://docs.python.org/3/library/json.html#json.dump]</span>
+            <span class="n">dump</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">idToSignals</span><span class="p">,</span> <span class="n">outputFileIdToSignals</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Save the idToSignalsDescriptions Dictionary</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dictionaries</span><span class="se">\\</span><span class="s1">idToSignalDescriptions.json&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">outputFileIdToSignalDescriptions</span><span class="p">:</span>
+            <span class="c1"># [https://docs.python.org/3/library/json.html#json.dump]</span>
+            <span class="n">dump</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">idToSignalDescriptions</span><span class="p">,</span> <span class="n">outputFileIdToSignalDescriptions</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Save the signalsToId Dictionary</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dictionaries</span><span class="se">\\</span><span class="s1">signalsToId.json&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">outputFileSignalsToId</span><span class="p">:</span>
+            <span class="c1"># [https://docs.python.org/3/library/json.html#json.dump]</span>
+            <span class="n">dump</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">signalsToId</span><span class="p">,</span> <span class="n">outputFileSignalsToId</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Save the idToSendType Dictionary</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dictionaries</span><span class="se">\\</span><span class="s1">idToSendType.json&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">outputFileIdToSendType</span><span class="p">:</span>
+            <span class="c1"># [https://docs.python.org/3/library/json.html#json.dump]</span>
+            <span class="n">dump</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">idToSendType</span><span class="p">,</span> <span class="n">outputFileIdToSendType</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Save the idToCycleTime Dictionary</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dictionaries</span><span class="se">\\</span><span class="s1">idToCycleTime.json&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">outputFileToCycleTime</span><span class="p">:</span>
+            <span class="c1"># [https://docs.python.org/3/library/json.html#json.dump]</span>
+            <span class="n">dump</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">idToCycleTime</span><span class="p">,</span> <span class="n">outputFileToCycleTime</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Save the signalsToMin Dictionary</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dictionaries</span><span class="se">\\</span><span class="s1">signalsToMin.json&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">outputFileSignalsToMin</span><span class="p">:</span>
+            <span class="c1"># [https://docs.python.org/3/library/json.html#json.dump]</span>
+            <span class="n">dump</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">signalsToMin</span><span class="p">,</span> <span class="n">outputFileSignalsToMin</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Save the signalsToMax Dictionary</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dictionaries</span><span class="se">\\</span><span class="s1">signalsToMax.json&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">outputFileSignalsToMax</span><span class="p">:</span>
+            <span class="c1"># [https://docs.python.org/3/library/json.html#json.dump]</span>
+            <span class="n">dump</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">signalsToMax</span><span class="p">,</span> <span class="n">outputFileSignalsToMax</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="kc">True</span>
+
+
+    <span class="c1">###############################</span>
+    <span class="c1"># LOAD DICTIONARIES FROM JSON #</span>
+    <span class="c1">###############################</span>
+    <span class="k">def</span> <span class="nf">loadDictionaries</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&#39;&#39;&#39; Loads the json save files located in the &#39;dictionaries&#39; folder into the instance&#39;s dictionaries.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            bool: True if execution completed with no errors, False otherwise.</span>
+<span class="sd">        &#39;&#39;&#39;</span>        
+        <span class="c1"># Load the idToSignals Dictionary</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dictionaries</span><span class="se">\\</span><span class="s1">idToSignals.json&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">inputFileIdToSignals</span><span class="p">:</span>
+            <span class="c1"># [https://docs.python.org/3/library/json.html#json.load]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">idToSignals</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="n">inputFileIdToSignals</span><span class="p">)</span>
+
+        <span class="c1"># Load the idToSignalDescriptions Dictionary</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dictionaries</span><span class="se">\\</span><span class="s1">idToSignalDescriptions.json&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">inputFileIdToSignalDescriptions</span><span class="p">:</span>
+            <span class="c1"># [https://docs.python.org/3/library/json.html#json.load]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">idToSignalDescriptions</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="n">inputFileIdToSignalDescriptions</span><span class="p">)</span>
+
+        <span class="c1"># Load the signalsToId Dictionary</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dictionaries</span><span class="se">\\</span><span class="s1">signalsToId.json&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">inputFileSignalsToId</span><span class="p">:</span>
+            <span class="c1"># [https://docs.python.org/3/library/json.html#json.load]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">signalsToId</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="n">inputFileSignalsToId</span><span class="p">)</span>
+
+        <span class="c1"># Load the idToSendType Dictionary</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dictionaries</span><span class="se">\\</span><span class="s1">idToSendType.json&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">inputFileIdToSendType</span><span class="p">:</span>
+            <span class="c1"># [https://docs.python.org/3/library/json.html#json.load]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">idToSendType</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="n">inputFileIdToSendType</span><span class="p">)</span>
+
+        <span class="c1"># Load the idToCycleTime Dictionary</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dictionaries</span><span class="se">\\</span><span class="s1">idToCycleTime.json&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">inputFileIdToCycleTime</span><span class="p">:</span>
+            <span class="c1"># [https://docs.python.org/3/library/json.html#json.load]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">idToCycleTime</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="n">inputFileIdToCycleTime</span><span class="p">)</span>
+
+        <span class="c1"># Load the signalsToMin Dictionary</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dictionaries</span><span class="se">\\</span><span class="s1">signalsToMin.json&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">inputFileSignalsToMin</span><span class="p">:</span>
+            <span class="c1"># [https://docs.python.org/3/library/json.html#json.load]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">signalsToMin</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="n">inputFileSignalsToMin</span><span class="p">)</span>
+
+        <span class="c1"># Load the signalsToMax Dictionary</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dictionaries</span><span class="se">\\</span><span class="s1">signalsToMax.json&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">inputFileSignalsToMax</span><span class="p">:</span>
+            <span class="c1"># [https://docs.python.org/3/library/json.html#json.load]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">signalsToMax</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="n">inputFileSignalsToMax</span><span class="p">)</span>
+
+
+    <span class="c1">#######################</span>
+    <span class="c1"># DATA LOOKUP METHODS #</span>
+    <span class="c1">#######################</span>
+
+    <span class="k">def</span> <span class="nf">getIdBySignalName</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">signalName</span><span class="p">:</span><span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&#39;&#39;&#39; Get the ID for a given signal.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            signalName (str): The signal name to index.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            str: The ID for the specified signal.</span>
+<span class="sd">        &#39;&#39;&#39;</span>        
+        <span class="c1"># Return the dict value for the signal</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">signalsToId</span><span class="p">[</span><span class="n">signalName</span><span class="p">]</span>
+
+
+    <span class="k">def</span> <span class="nf">getMessageBySignalName</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">signalName</span><span class="p">:</span><span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&#39;&#39;&#39; Get the full message for a given signal.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            signalName (str): The signal name to index.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            str: A dictionary of signal:value pairs for the specified signal&#39;s Message, where the value is the minimum value for each signal. </span>
+<span class="sd">        &#39;&#39;&#39;</span>        
+        <span class="c1"># Return the message for the ID linked to the signal</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">idToSignals</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">signalsToId</span><span class="p">[</span><span class="n">signalName</span><span class="p">]]</span>
+
+
+    <span class="k">def</span> <span class="nf">getDescriptionBySignalName</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">signalName</span><span class="p">:</span><span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&#39;&#39;&#39; Get the description for a given signal.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            signalName (str): The signal name to index.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            str: The description for the specified value, if it exists.</span>
+<span class="sd">        &#39;&#39;&#39;</span>        
+        <span class="c1"># Return the dict value for the description</span>
+        <span class="n">descriptionDict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">idToSignalDescriptions</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">signalsToId</span><span class="p">[</span><span class="n">signalName</span><span class="p">]]</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">descriptionDict</span><span class="p">[</span><span class="n">signalName</span><span class="p">]</span>
+        <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s2">&quot;DBC Auto Parse: &quot;</span> <span class="o">+</span> <span class="n">signalName</span> <span class="o">+</span> <span class="s2">&quot; does not have a description in the DBC &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">dbcName</span> <span class="o">+</span> <span class="s2">&quot;!&quot;</span>
+
+
+    <span class="k">def</span> <span class="nf">getMinBySignal</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">signalName</span><span class="p">:</span><span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&#39;&#39;&#39; Get the min for a given signal.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            signalName (str): The signal name to index.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            str: The minimum value for the specified value.</span>
+<span class="sd">        &#39;&#39;&#39;</span>        
+        <span class="c1"># Return the dict value for the min</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">signalsToMin</span><span class="p">[</span><span class="n">signalName</span><span class="p">]</span>
+
+
+    <span class="k">def</span> <span class="nf">getMaxBySignal</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">signalName</span><span class="p">:</span><span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&#39;&#39;&#39; Get the max for a given signal.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            signalName (str): The signal name to index.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            str: The maximum value for the specified signal.</span>
+<span class="sd">        &#39;&#39;&#39;</span>        
+        <span class="c1"># Return the dict value for the max</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">signalsToMax</span><span class="p">[</span><span class="n">signalName</span><span class="p">]</span>
+
+
+    <span class="k">def</span> <span class="nf">getMessageById</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ID</span><span class="p">:</span><span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&#39;&#39;&#39;Get the message for a given ID.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            ID (str): The ID to index.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            dict: A dictionary of signal:value pairs for the specified ID&#39;s Message, where the value is the minimum value for each signal.</span>
+<span class="sd">        &#39;&#39;&#39;</span>        
+        <span class="c1"># Return the message for the ID</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">idToSignals</span><span class="p">[</span><span class="n">ID</span><span class="p">]</span>
+
+
+    <span class="k">def</span> <span class="nf">getCycleTimeById</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ID</span><span class="p">:</span><span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&#39;&#39;&#39; Get the cycle time for a given ID.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            ID (str): The ID to index.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            str: The cycle time for the specified ID.</span>
+<span class="sd">        &#39;&#39;&#39;</span>        
+        <span class="c1"># Return the dict value for the cycle time</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">idToCycleTime</span><span class="p">[</span><span class="n">ID</span><span class="p">]</span>
+
+
+    <span class="k">def</span> <span class="nf">getSendTypeById</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ID</span><span class="p">:</span><span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&#39;&#39;&#39; Get the send type for a given ID.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            ID (str): The ID to index.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            str: The send type for the specified ID.</span>
+<span class="sd">        &#39;&#39;&#39;</span>        
+        <span class="c1"># Return the dict value for the send type</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">idToSendType</span><span class="p">[</span><span class="n">ID</span><span class="p">]</span>
+
+
+    <span class="k">def</span> <span class="nf">getDbcPath</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&#39;&#39;&#39; Get the current DBC path.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            str: Path of the current instance&#39;s loaded DBC file.</span>
+<span class="sd">        &#39;&#39;&#39;</span>        
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">dbcPath</span>
+
+
+    <span class="k">def</span> <span class="nf">getDbcName</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&#39;&#39;&#39; Get the current DBC name.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            str: Name of the current instance&#39;s loaded DBC file.</span>
+<span class="sd">        &#39;&#39;&#39;</span>        
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">dbcName</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h3 id="drivers.dbcAutoParse.dbcParse.__init__" class="doc doc-heading">
+          <code class="highlight language-python"><span class="fm">__init__</span><span class="p">()</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Initializes the class upon instance creation.</p>
+
+          <details class="quote">
+            <summary>Source code in <code>drivers\dbcAutoParse.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39; Initializes the class upon instance creation.</span>
+<span class="sd">    &#39;&#39;&#39;</span>        
+    <span class="bp">self</span><span class="o">.</span><span class="n">version</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">dbcPath</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">dbcName</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">idToSignals</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">dict</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">idToSignalDescriptions</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">dict</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">idToSendType</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">idToCycleTime</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">signalsToId</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">signalsToMin</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">signalsToMax</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h3 id="drivers.dbcAutoParse.dbcParse.dumpDictionaries" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">dumpDictionaries</span><span class="p">()</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Saves (dumps) the current instance's dictionaries into the json save files located in the 'dictionaries' folder.</p>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>bool</code></td>          <td>
+                <code>bool</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>True if execution completed with no errors, False otherwise.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>drivers\dbcAutoParse.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">222</span>
+<span class="normal">223</span>
+<span class="normal">224</span>
+<span class="normal">225</span>
+<span class="normal">226</span>
+<span class="normal">227</span>
+<span class="normal">228</span>
+<span class="normal">229</span>
+<span class="normal">230</span>
+<span class="normal">231</span>
+<span class="normal">232</span>
+<span class="normal">233</span>
+<span class="normal">234</span>
+<span class="normal">235</span>
+<span class="normal">236</span>
+<span class="normal">237</span>
+<span class="normal">238</span>
+<span class="normal">239</span>
+<span class="normal">240</span>
+<span class="normal">241</span>
+<span class="normal">242</span>
+<span class="normal">243</span>
+<span class="normal">244</span>
+<span class="normal">245</span>
+<span class="normal">246</span>
+<span class="normal">247</span>
+<span class="normal">248</span>
+<span class="normal">249</span>
+<span class="normal">250</span>
+<span class="normal">251</span>
+<span class="normal">252</span>
+<span class="normal">253</span>
+<span class="normal">254</span>
+<span class="normal">255</span>
+<span class="normal">256</span>
+<span class="normal">257</span>
+<span class="normal">258</span>
+<span class="normal">259</span>
+<span class="normal">260</span>
+<span class="normal">261</span>
+<span class="normal">262</span>
+<span class="normal">263</span>
+<span class="normal">264</span>
+<span class="normal">265</span>
+<span class="normal">266</span>
+<span class="normal">267</span>
+<span class="normal">268</span>
+<span class="normal">269</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">dumpDictionaries</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39;Saves (dumps) the current instance&#39;s dictionaries into the json save files located in the &#39;dictionaries&#39; folder.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        bool: True if execution completed with no errors, False otherwise.</span>
+<span class="sd">    &#39;&#39;&#39;</span>        
+    <span class="c1"># [https://www.geeksforgeeks.org/create-a-directory-in-python/]</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">mkdir</span><span class="p">(</span><span class="s2">&quot;dictionaries&quot;</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">OSError</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CC DBC-AutoParse: Dictionary Directory Already Exists!&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Save the idToSignals Dictionary</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dictionaries</span><span class="se">\\</span><span class="s1">idToSignals.json&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">outputFileIdToSignals</span><span class="p">:</span>
+        <span class="c1"># [https://docs.python.org/3/library/json.html#json.dump]</span>
+        <span class="n">dump</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">idToSignals</span><span class="p">,</span> <span class="n">outputFileIdToSignals</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Save the idToSignalsDescriptions Dictionary</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dictionaries</span><span class="se">\\</span><span class="s1">idToSignalDescriptions.json&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">outputFileIdToSignalDescriptions</span><span class="p">:</span>
+        <span class="c1"># [https://docs.python.org/3/library/json.html#json.dump]</span>
+        <span class="n">dump</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">idToSignalDescriptions</span><span class="p">,</span> <span class="n">outputFileIdToSignalDescriptions</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Save the signalsToId Dictionary</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dictionaries</span><span class="se">\\</span><span class="s1">signalsToId.json&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">outputFileSignalsToId</span><span class="p">:</span>
+        <span class="c1"># [https://docs.python.org/3/library/json.html#json.dump]</span>
+        <span class="n">dump</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">signalsToId</span><span class="p">,</span> <span class="n">outputFileSignalsToId</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Save the idToSendType Dictionary</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dictionaries</span><span class="se">\\</span><span class="s1">idToSendType.json&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">outputFileIdToSendType</span><span class="p">:</span>
+        <span class="c1"># [https://docs.python.org/3/library/json.html#json.dump]</span>
+        <span class="n">dump</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">idToSendType</span><span class="p">,</span> <span class="n">outputFileIdToSendType</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Save the idToCycleTime Dictionary</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dictionaries</span><span class="se">\\</span><span class="s1">idToCycleTime.json&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">outputFileToCycleTime</span><span class="p">:</span>
+        <span class="c1"># [https://docs.python.org/3/library/json.html#json.dump]</span>
+        <span class="n">dump</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">idToCycleTime</span><span class="p">,</span> <span class="n">outputFileToCycleTime</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Save the signalsToMin Dictionary</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dictionaries</span><span class="se">\\</span><span class="s1">signalsToMin.json&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">outputFileSignalsToMin</span><span class="p">:</span>
+        <span class="c1"># [https://docs.python.org/3/library/json.html#json.dump]</span>
+        <span class="n">dump</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">signalsToMin</span><span class="p">,</span> <span class="n">outputFileSignalsToMin</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Save the signalsToMax Dictionary</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dictionaries</span><span class="se">\\</span><span class="s1">signalsToMax.json&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">outputFileSignalsToMax</span><span class="p">:</span>
+        <span class="c1"># [https://docs.python.org/3/library/json.html#json.dump]</span>
+        <span class="n">dump</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">signalsToMax</span><span class="p">,</span> <span class="n">outputFileSignalsToMax</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="kc">True</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h3 id="drivers.dbcAutoParse.dbcParse.getCycleTimeById" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">getCycleTimeById</span><span class="p">(</span><span class="n">ID</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Get the cycle time for a given ID.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>ID</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The ID to index.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>str</code></td>          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The cycle time for the specified ID.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>drivers\dbcAutoParse.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">403</span>
+<span class="normal">404</span>
+<span class="normal">405</span>
+<span class="normal">406</span>
+<span class="normal">407</span>
+<span class="normal">408</span>
+<span class="normal">409</span>
+<span class="normal">410</span>
+<span class="normal">411</span>
+<span class="normal">412</span>
+<span class="normal">413</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">getCycleTimeById</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ID</span><span class="p">:</span><span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39; Get the cycle time for a given ID.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        ID (str): The ID to index.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        str: The cycle time for the specified ID.</span>
+<span class="sd">    &#39;&#39;&#39;</span>        
+    <span class="c1"># Return the dict value for the cycle time</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">idToCycleTime</span><span class="p">[</span><span class="n">ID</span><span class="p">]</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h3 id="drivers.dbcAutoParse.dbcParse.getDbcName" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">getDbcName</span><span class="p">()</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Get the current DBC name.</p>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>str</code></td>          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Name of the current instance's loaded DBC file.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>drivers\dbcAutoParse.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">438</span>
+<span class="normal">439</span>
+<span class="normal">440</span>
+<span class="normal">441</span>
+<span class="normal">442</span>
+<span class="normal">443</span>
+<span class="normal">444</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">getDbcName</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39; Get the current DBC name.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        str: Name of the current instance&#39;s loaded DBC file.</span>
+<span class="sd">    &#39;&#39;&#39;</span>        
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">dbcName</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h3 id="drivers.dbcAutoParse.dbcParse.getDbcPath" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">getDbcPath</span><span class="p">()</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Get the current DBC path.</p>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>str</code></td>          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Path of the current instance's loaded DBC file.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>drivers\dbcAutoParse.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">429</span>
+<span class="normal">430</span>
+<span class="normal">431</span>
+<span class="normal">432</span>
+<span class="normal">433</span>
+<span class="normal">434</span>
+<span class="normal">435</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">getDbcPath</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39; Get the current DBC path.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        str: Path of the current instance&#39;s loaded DBC file.</span>
+<span class="sd">    &#39;&#39;&#39;</span>        
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">dbcPath</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h3 id="drivers.dbcAutoParse.dbcParse.getDescriptionBySignalName" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">getDescriptionBySignalName</span><span class="p">(</span><span class="n">signalName</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Get the description for a given signal.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>signalName</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The signal name to index.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>str</code></td>          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The description for the specified value, if it exists.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>drivers\dbcAutoParse.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">347</span>
+<span class="normal">348</span>
+<span class="normal">349</span>
+<span class="normal">350</span>
+<span class="normal">351</span>
+<span class="normal">352</span>
+<span class="normal">353</span>
+<span class="normal">354</span>
+<span class="normal">355</span>
+<span class="normal">356</span>
+<span class="normal">357</span>
+<span class="normal">358</span>
+<span class="normal">359</span>
+<span class="normal">360</span>
+<span class="normal">361</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">getDescriptionBySignalName</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">signalName</span><span class="p">:</span><span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39; Get the description for a given signal.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        signalName (str): The signal name to index.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        str: The description for the specified value, if it exists.</span>
+<span class="sd">    &#39;&#39;&#39;</span>        
+    <span class="c1"># Return the dict value for the description</span>
+    <span class="n">descriptionDict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">idToSignalDescriptions</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">signalsToId</span><span class="p">[</span><span class="n">signalName</span><span class="p">]]</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">descriptionDict</span><span class="p">[</span><span class="n">signalName</span><span class="p">]</span>
+    <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;DBC Auto Parse: &quot;</span> <span class="o">+</span> <span class="n">signalName</span> <span class="o">+</span> <span class="s2">&quot; does not have a description in the DBC &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">dbcName</span> <span class="o">+</span> <span class="s2">&quot;!&quot;</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h3 id="drivers.dbcAutoParse.dbcParse.getIdBySignalName" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">getIdBySignalName</span><span class="p">(</span><span class="n">signalName</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Get the ID for a given signal.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>signalName</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The signal name to index.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>str</code></td>          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The ID for the specified signal.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>drivers\dbcAutoParse.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">321</span>
+<span class="normal">322</span>
+<span class="normal">323</span>
+<span class="normal">324</span>
+<span class="normal">325</span>
+<span class="normal">326</span>
+<span class="normal">327</span>
+<span class="normal">328</span>
+<span class="normal">329</span>
+<span class="normal">330</span>
+<span class="normal">331</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">getIdBySignalName</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">signalName</span><span class="p">:</span><span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39; Get the ID for a given signal.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        signalName (str): The signal name to index.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        str: The ID for the specified signal.</span>
+<span class="sd">    &#39;&#39;&#39;</span>        
+    <span class="c1"># Return the dict value for the signal</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">signalsToId</span><span class="p">[</span><span class="n">signalName</span><span class="p">]</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h3 id="drivers.dbcAutoParse.dbcParse.getMaxBySignal" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">getMaxBySignal</span><span class="p">(</span><span class="n">signalName</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Get the max for a given signal.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>signalName</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The signal name to index.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>str</code></td>          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The maximum value for the specified signal.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>drivers\dbcAutoParse.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">377</span>
+<span class="normal">378</span>
+<span class="normal">379</span>
+<span class="normal">380</span>
+<span class="normal">381</span>
+<span class="normal">382</span>
+<span class="normal">383</span>
+<span class="normal">384</span>
+<span class="normal">385</span>
+<span class="normal">386</span>
+<span class="normal">387</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">getMaxBySignal</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">signalName</span><span class="p">:</span><span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39; Get the max for a given signal.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        signalName (str): The signal name to index.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        str: The maximum value for the specified signal.</span>
+<span class="sd">    &#39;&#39;&#39;</span>        
+    <span class="c1"># Return the dict value for the max</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">signalsToMax</span><span class="p">[</span><span class="n">signalName</span><span class="p">]</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h3 id="drivers.dbcAutoParse.dbcParse.getMessageById" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">getMessageById</span><span class="p">(</span><span class="n">ID</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Get the message for a given ID.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>ID</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The ID to index.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>dict</code></td>          <td>
+                <code>dict</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>A dictionary of signal:value pairs for the specified ID's Message, where the value is the minimum value for each signal.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>drivers\dbcAutoParse.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">390</span>
+<span class="normal">391</span>
+<span class="normal">392</span>
+<span class="normal">393</span>
+<span class="normal">394</span>
+<span class="normal">395</span>
+<span class="normal">396</span>
+<span class="normal">397</span>
+<span class="normal">398</span>
+<span class="normal">399</span>
+<span class="normal">400</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">getMessageById</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ID</span><span class="p">:</span><span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39;Get the message for a given ID.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        ID (str): The ID to index.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        dict: A dictionary of signal:value pairs for the specified ID&#39;s Message, where the value is the minimum value for each signal.</span>
+<span class="sd">    &#39;&#39;&#39;</span>        
+    <span class="c1"># Return the message for the ID</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">idToSignals</span><span class="p">[</span><span class="n">ID</span><span class="p">]</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h3 id="drivers.dbcAutoParse.dbcParse.getMessageBySignalName" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">getMessageBySignalName</span><span class="p">(</span><span class="n">signalName</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Get the full message for a given signal.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>signalName</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The signal name to index.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>str</code></td>          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>A dictionary of signal:value pairs for the specified signal's Message, where the value is the minimum value for each signal.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>drivers\dbcAutoParse.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">334</span>
+<span class="normal">335</span>
+<span class="normal">336</span>
+<span class="normal">337</span>
+<span class="normal">338</span>
+<span class="normal">339</span>
+<span class="normal">340</span>
+<span class="normal">341</span>
+<span class="normal">342</span>
+<span class="normal">343</span>
+<span class="normal">344</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">getMessageBySignalName</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">signalName</span><span class="p">:</span><span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39; Get the full message for a given signal.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        signalName (str): The signal name to index.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        str: A dictionary of signal:value pairs for the specified signal&#39;s Message, where the value is the minimum value for each signal. </span>
+<span class="sd">    &#39;&#39;&#39;</span>        
+    <span class="c1"># Return the message for the ID linked to the signal</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">idToSignals</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">signalsToId</span><span class="p">[</span><span class="n">signalName</span><span class="p">]]</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h3 id="drivers.dbcAutoParse.dbcParse.getMinBySignal" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">getMinBySignal</span><span class="p">(</span><span class="n">signalName</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Get the min for a given signal.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>signalName</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The signal name to index.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>str</code></td>          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The minimum value for the specified value.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>drivers\dbcAutoParse.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">364</span>
+<span class="normal">365</span>
+<span class="normal">366</span>
+<span class="normal">367</span>
+<span class="normal">368</span>
+<span class="normal">369</span>
+<span class="normal">370</span>
+<span class="normal">371</span>
+<span class="normal">372</span>
+<span class="normal">373</span>
+<span class="normal">374</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">getMinBySignal</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">signalName</span><span class="p">:</span><span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39; Get the min for a given signal.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        signalName (str): The signal name to index.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        str: The minimum value for the specified value.</span>
+<span class="sd">    &#39;&#39;&#39;</span>        
+    <span class="c1"># Return the dict value for the min</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">signalsToMin</span><span class="p">[</span><span class="n">signalName</span><span class="p">]</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h3 id="drivers.dbcAutoParse.dbcParse.getSendTypeById" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">getSendTypeById</span><span class="p">(</span><span class="n">ID</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Get the send type for a given ID.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>ID</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The ID to index.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>str</code></td>          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The send type for the specified ID.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>drivers\dbcAutoParse.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">416</span>
+<span class="normal">417</span>
+<span class="normal">418</span>
+<span class="normal">419</span>
+<span class="normal">420</span>
+<span class="normal">421</span>
+<span class="normal">422</span>
+<span class="normal">423</span>
+<span class="normal">424</span>
+<span class="normal">425</span>
+<span class="normal">426</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">getSendTypeById</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ID</span><span class="p">:</span><span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39; Get the send type for a given ID.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        ID (str): The ID to index.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        str: The send type for the specified ID.</span>
+<span class="sd">    &#39;&#39;&#39;</span>        
+    <span class="c1"># Return the dict value for the send type</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">idToSendType</span><span class="p">[</span><span class="n">ID</span><span class="p">]</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h3 id="drivers.dbcAutoParse.dbcParse.loadDictionaries" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">loadDictionaries</span><span class="p">()</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Loads the json save files located in the 'dictionaries' folder into the instance's dictionaries.</p>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>bool</code></td>          <td>
+                <code>bool</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>True if execution completed with no errors, False otherwise.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>drivers\dbcAutoParse.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">275</span>
+<span class="normal">276</span>
+<span class="normal">277</span>
+<span class="normal">278</span>
+<span class="normal">279</span>
+<span class="normal">280</span>
+<span class="normal">281</span>
+<span class="normal">282</span>
+<span class="normal">283</span>
+<span class="normal">284</span>
+<span class="normal">285</span>
+<span class="normal">286</span>
+<span class="normal">287</span>
+<span class="normal">288</span>
+<span class="normal">289</span>
+<span class="normal">290</span>
+<span class="normal">291</span>
+<span class="normal">292</span>
+<span class="normal">293</span>
+<span class="normal">294</span>
+<span class="normal">295</span>
+<span class="normal">296</span>
+<span class="normal">297</span>
+<span class="normal">298</span>
+<span class="normal">299</span>
+<span class="normal">300</span>
+<span class="normal">301</span>
+<span class="normal">302</span>
+<span class="normal">303</span>
+<span class="normal">304</span>
+<span class="normal">305</span>
+<span class="normal">306</span>
+<span class="normal">307</span>
+<span class="normal">308</span>
+<span class="normal">309</span>
+<span class="normal">310</span>
+<span class="normal">311</span>
+<span class="normal">312</span>
+<span class="normal">313</span>
+<span class="normal">314</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">loadDictionaries</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39; Loads the json save files located in the &#39;dictionaries&#39; folder into the instance&#39;s dictionaries.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        bool: True if execution completed with no errors, False otherwise.</span>
+<span class="sd">    &#39;&#39;&#39;</span>        
+    <span class="c1"># Load the idToSignals Dictionary</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dictionaries</span><span class="se">\\</span><span class="s1">idToSignals.json&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">inputFileIdToSignals</span><span class="p">:</span>
+        <span class="c1"># [https://docs.python.org/3/library/json.html#json.load]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">idToSignals</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="n">inputFileIdToSignals</span><span class="p">)</span>
+
+    <span class="c1"># Load the idToSignalDescriptions Dictionary</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dictionaries</span><span class="se">\\</span><span class="s1">idToSignalDescriptions.json&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">inputFileIdToSignalDescriptions</span><span class="p">:</span>
+        <span class="c1"># [https://docs.python.org/3/library/json.html#json.load]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">idToSignalDescriptions</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="n">inputFileIdToSignalDescriptions</span><span class="p">)</span>
+
+    <span class="c1"># Load the signalsToId Dictionary</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dictionaries</span><span class="se">\\</span><span class="s1">signalsToId.json&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">inputFileSignalsToId</span><span class="p">:</span>
+        <span class="c1"># [https://docs.python.org/3/library/json.html#json.load]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">signalsToId</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="n">inputFileSignalsToId</span><span class="p">)</span>
+
+    <span class="c1"># Load the idToSendType Dictionary</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dictionaries</span><span class="se">\\</span><span class="s1">idToSendType.json&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">inputFileIdToSendType</span><span class="p">:</span>
+        <span class="c1"># [https://docs.python.org/3/library/json.html#json.load]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">idToSendType</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="n">inputFileIdToSendType</span><span class="p">)</span>
+
+    <span class="c1"># Load the idToCycleTime Dictionary</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dictionaries</span><span class="se">\\</span><span class="s1">idToCycleTime.json&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">inputFileIdToCycleTime</span><span class="p">:</span>
+        <span class="c1"># [https://docs.python.org/3/library/json.html#json.load]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">idToCycleTime</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="n">inputFileIdToCycleTime</span><span class="p">)</span>
+
+    <span class="c1"># Load the signalsToMin Dictionary</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dictionaries</span><span class="se">\\</span><span class="s1">signalsToMin.json&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">inputFileSignalsToMin</span><span class="p">:</span>
+        <span class="c1"># [https://docs.python.org/3/library/json.html#json.load]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">signalsToMin</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="n">inputFileSignalsToMin</span><span class="p">)</span>
+
+    <span class="c1"># Load the signalsToMax Dictionary</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dictionaries</span><span class="se">\\</span><span class="s1">signalsToMax.json&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">inputFileSignalsToMax</span><span class="p">:</span>
+        <span class="c1"># [https://docs.python.org/3/library/json.html#json.load]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">signalsToMax</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="n">inputFileSignalsToMax</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h3 id="drivers.dbcAutoParse.dbcParse.parseNewDBC" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">parseNewDBC</span><span class="p">(</span><span class="n">filePath</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Parses a DBC file and loads all information into instance-based dictionaries.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>filePath</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The Path to the DBC file to parse.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>bool</code></td>          <td>
+                <code>bool</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>True if execution completed with no errors, False otherwise.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>drivers\dbcAutoParse.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 78</span>
+<span class="normal"> 79</span>
+<span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span>
+<span class="normal">145</span>
+<span class="normal">146</span>
+<span class="normal">147</span>
+<span class="normal">148</span>
+<span class="normal">149</span>
+<span class="normal">150</span>
+<span class="normal">151</span>
+<span class="normal">152</span>
+<span class="normal">153</span>
+<span class="normal">154</span>
+<span class="normal">155</span>
+<span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span>
+<span class="normal">159</span>
+<span class="normal">160</span>
+<span class="normal">161</span>
+<span class="normal">162</span>
+<span class="normal">163</span>
+<span class="normal">164</span>
+<span class="normal">165</span>
+<span class="normal">166</span>
+<span class="normal">167</span>
+<span class="normal">168</span>
+<span class="normal">169</span>
+<span class="normal">170</span>
+<span class="normal">171</span>
+<span class="normal">172</span>
+<span class="normal">173</span>
+<span class="normal">174</span>
+<span class="normal">175</span>
+<span class="normal">176</span>
+<span class="normal">177</span>
+<span class="normal">178</span>
+<span class="normal">179</span>
+<span class="normal">180</span>
+<span class="normal">181</span>
+<span class="normal">182</span>
+<span class="normal">183</span>
+<span class="normal">184</span>
+<span class="normal">185</span>
+<span class="normal">186</span>
+<span class="normal">187</span>
+<span class="normal">188</span>
+<span class="normal">189</span>
+<span class="normal">190</span>
+<span class="normal">191</span>
+<span class="normal">192</span>
+<span class="normal">193</span>
+<span class="normal">194</span>
+<span class="normal">195</span>
+<span class="normal">196</span>
+<span class="normal">197</span>
+<span class="normal">198</span>
+<span class="normal">199</span>
+<span class="normal">200</span>
+<span class="normal">201</span>
+<span class="normal">202</span>
+<span class="normal">203</span>
+<span class="normal">204</span>
+<span class="normal">205</span>
+<span class="normal">206</span>
+<span class="normal">207</span>
+<span class="normal">208</span>
+<span class="normal">209</span>
+<span class="normal">210</span>
+<span class="normal">211</span>
+<span class="normal">212</span>
+<span class="normal">213</span>
+<span class="normal">214</span>
+<span class="normal">215</span>
+<span class="normal">216</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">parseNewDBC</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filePath</span><span class="p">:</span><span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39; Parses a DBC file and loads all information into instance-based dictionaries.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        filePath (str): The Path to the DBC file to parse.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        bool: True if execution completed with no errors, False otherwise.</span>
+<span class="sd">    &#39;&#39;&#39;</span>        
+    <span class="c1"># Save the dbc path</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">dbcPath</span> <span class="o">=</span> <span class="n">filePath</span>
+    <span class="c1"># Save the dbc name</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">dbcName</span> <span class="o">=</span> <span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dbcPath</span><span class="p">)</span>
+
+    <span class="c1"># [https://docs.python.org/3/library/functions.html#open]</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file</span><span class="o">=</span><span class="n">filePath</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">dbcFile</span><span class="p">:</span>
+        <span class="n">latestAddedID</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+        <span class="n">latestAddedDescriptionID</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+        <span class="n">latestAddedDescriptionSignal</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+        <span class="n">latestAddedDescriptionFlag</span> <span class="o">=</span> <span class="kc">False</span>
+
+        <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">dbcFile</span><span class="p">:</span>
+            <span class="c1"># Strip the line of beginning / ending whitespace</span>
+            <span class="c1"># [https://www.geeksforgeeks.org/python-string-strip/]</span>
+            <span class="n">strippedLine</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+            <span class="c1"># Split the line into an array</span>
+            <span class="c1"># [https://www.geeksforgeeks.org/python-string-split/]</span>
+            <span class="n">lineComponents</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+
+            <span class="c1"># Handle empty lines</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">lineComponents</span><span class="p">:</span>
+                <span class="k">continue</span>
+
+            <span class="c1"># Detect version line</span>
+            <span class="k">if</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;VERSION&quot;</span><span class="p">:</span>
+                <span class="c1"># Save the version</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">version</span> <span class="o">=</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+                <span class="c1"># Go to the next line in the file</span>
+                <span class="k">continue</span>
+            <span class="c1"># Detect a new ID</span>
+            <span class="k">elif</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;BO_&quot;</span><span class="p">:</span>
+                <span class="c1"># Create a new key in the idToSignals dictionary</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">idToSignals</span><span class="p">[</span><span class="n">lineComponents</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span> <span class="o">=</span> <span class="p">{}</span>
+                <span class="c1"># Save ID for adding signals</span>
+                <span class="n">latestAddedID</span> <span class="o">=</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+                <span class="c1"># Go to the next line in the file</span>
+                <span class="k">continue</span>
+
+
+            <span class="c1"># Detect a new signal</span>
+            <span class="k">elif</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;SG_&quot;</span><span class="p">:</span>
+                <span class="c1"># Add the signal to the signalsToId dictionary</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">signalsToId</span><span class="p">[</span><span class="n">lineComponents</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span> <span class="o">=</span> <span class="n">latestAddedID</span>
+
+                <span class="c1"># Get the min and max</span>
+                <span class="n">signalValueRange</span> <span class="o">=</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">&quot;[]&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;|&quot;</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">signalsToMin</span><span class="p">[</span><span class="n">lineComponents</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">signalValueRange</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">signalsToMax</span><span class="p">[</span><span class="n">lineComponents</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">signalValueRange</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+                <span class="c1"># Add the signal to the dictionary of the latest ID parsed, with the value being the signal min</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">idToSignals</span><span class="p">[</span><span class="n">latestAddedID</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="n">lineComponents</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="nb">float</span><span class="p">(</span><span class="n">signalValueRange</span><span class="p">[</span><span class="mi">0</span><span class="p">])})</span>
+
+
+                <span class="c1"># Go to the next line in the file</span>
+                <span class="k">continue</span>
+
+            <span class="c1"># Detect a new description</span>
+            <span class="k">elif</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;CM_&quot;</span><span class="p">:</span>
+                <span class="c1"># Detect a description for a ID</span>
+                <span class="k">if</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;BO_&quot;</span><span class="p">:</span>
+                    <span class="n">currentDescription</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+                    <span class="c1"># Get the total description, which may have spaces and therefor was split up into the array</span>
+                    <span class="k">for</span> <span class="n">descriptionPartCount</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lineComponents</span><span class="p">)</span> <span class="o">-</span> <span class="mi">3</span><span class="p">):</span>
+                        <span class="n">currentDescription</span> <span class="o">=</span> <span class="n">currentDescription</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">lineComponents</span><span class="p">[</span><span class="n">descriptionPartCount</span> <span class="o">+</span> <span class="mi">3</span><span class="p">]</span>
+                    <span class="c1"># Save the ID and description to the dictionary</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">idToSignalDescriptions</span><span class="p">[</span><span class="n">lineComponents</span><span class="p">[</span><span class="mi">2</span><span class="p">]][</span><span class="n">lineComponents</span><span class="p">[</span><span class="mi">2</span><span class="p">]]</span> <span class="o">=</span> <span class="n">currentDescription</span>
+                    <span class="c1"># Save the ID as last added (and as the latest signal for placeholder)</span>
+                    <span class="n">latestAddedDescriptionID</span> <span class="o">=</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+                    <span class="n">latestAddedDescriptionSignal</span> <span class="o">=</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+                    <span class="c1"># Go to the next line in the file</span>
+                    <span class="k">continue</span>
+
+                <span class="c1"># Detect a description for a signal</span>
+                <span class="k">elif</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;SG_&quot;</span><span class="p">:</span>
+                    <span class="n">currentDescription</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+                    <span class="c1"># Get the total description, which may have spaces and therefor was split up into the array</span>
+                    <span class="k">for</span> <span class="n">descriptionPartCount</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lineComponents</span><span class="p">)</span> <span class="o">-</span> <span class="mi">4</span><span class="p">):</span>
+                        <span class="n">currentDescription</span> <span class="o">=</span> <span class="n">currentDescription</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">lineComponents</span><span class="p">[</span><span class="n">descriptionPartCount</span> <span class="o">+</span> <span class="mi">4</span><span class="p">]</span>
+                    <span class="c1"># Add the signal and description to the dictionary</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">idToSignalDescriptions</span><span class="p">[</span><span class="n">lineComponents</span><span class="p">[</span><span class="mi">2</span><span class="p">]][</span><span class="n">lineComponents</span><span class="p">[</span><span class="mi">3</span><span class="p">]]</span> <span class="o">=</span> <span class="n">currentDescription</span>
+                    <span class="c1"># Save the ID as last added ID and signal as last added signal</span>
+                    <span class="n">latestAddedDescriptionID</span> <span class="o">=</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+                    <span class="n">latestAddedDescriptionSignal</span> <span class="o">=</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+
+                    <span class="c1"># If the description is continued on next line, there will not be a semicolon</span>
+                    <span class="k">if</span> <span class="n">currentDescription</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;;&#39;</span><span class="p">:</span>
+                        <span class="c1"># Set flag for next line</span>
+                        <span class="n">latestAddedDescriptionFlag</span> <span class="o">=</span> <span class="kc">True</span>
+
+                    <span class="c1"># Go to the next line in the file</span>
+                    <span class="k">continue</span>
+
+            <span class="c1"># Detect a continued description</span>
+            <span class="k">elif</span> <span class="n">latestAddedDescriptionFlag</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
+                <span class="c1"># Get the description so far for the signal</span>
+                <span class="n">currentDescription</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">idToSignalDescriptions</span><span class="p">[</span><span class="n">latestAddedDescriptionID</span><span class="p">][</span><span class="n">latestAddedDescriptionSignal</span><span class="p">]</span>
+                <span class="c1"># For all the parts of the current line, add them to the description</span>
+                <span class="k">for</span> <span class="n">descriptionPartCount</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lineComponents</span><span class="p">)):</span>
+                    <span class="n">currentDescription</span> <span class="o">=</span> <span class="n">currentDescription</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">lineComponents</span><span class="p">[</span><span class="n">descriptionPartCount</span><span class="p">]</span>
+                <span class="c1"># Add the description back to the dictionary</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">idToSignalDescriptions</span><span class="p">[</span><span class="n">latestAddedDescriptionID</span><span class="p">][</span><span class="n">latestAddedDescriptionSignal</span><span class="p">]</span> <span class="o">=</span> <span class="n">currentDescription</span>
+
+                <span class="c1"># Check if this line was the last line of the description</span>
+                <span class="k">if</span> <span class="n">currentDescription</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;;&#39;</span><span class="p">:</span>
+                    <span class="c1"># Reset flag</span>
+                    <span class="n">latestAddedDescriptionFlag</span> <span class="o">=</span> <span class="kc">False</span>
+
+                <span class="c1"># Go to the next line in the file</span>
+                <span class="k">continue</span>
+
+            <span class="c1"># Detect a new message send type or cycle time</span>
+            <span class="k">elif</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;BA_&quot;</span><span class="p">:</span>
+                <span class="c1"># If it is cycle time (DBC places var name in &quot;&quot;)</span>
+                <span class="k">if</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;&quot;GenMsgCycleTime&quot;&#39;</span><span class="p">:</span>
+                    <span class="c1"># Add the ID and cycle time to dictionary</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">idToCycleTime</span><span class="p">[</span><span class="n">lineComponents</span><span class="p">[</span><span class="mi">3</span><span class="p">]]</span> <span class="o">=</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+                    <span class="c1"># Go to the next line in the file</span>
+                    <span class="k">continue</span>
+                <span class="c1"># If it is send type (DBC places var name in &quot;&quot;)</span>
+                <span class="k">elif</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;&quot;GenMsgSendType&quot;&#39;</span><span class="p">:</span>
+                    <span class="c1"># Add the ID and send type to dictionary</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">idToSendType</span><span class="p">[</span><span class="n">lineComponents</span><span class="p">[</span><span class="mi">3</span><span class="p">]]</span> <span class="o">=</span> <span class="n">lineComponents</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+                    <span class="c1"># Go to the next line in the file</span>
+                    <span class="k">continue</span>
+
+
+            <span class="c1">#TODO: Figure out what VAL_ is, and add support for it</span>
+            <span class="c1">#TODO: Figure out what VAL_TABLE_ is, and add support for it</span>
+    <span class="k">return</span> <span class="kc">True</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.81fa17fe.min.js"></script>
+      
+    
+  </body>
+</html>

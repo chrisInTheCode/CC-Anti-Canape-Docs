@@ -1,0 +1,3370 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../readers/">
+      
+      
+        <link rel="next" href="../dbcAutoParse/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.8">
+    
+    
+      
+        <title>Writer - Anti-Canape Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4b4a2bd9.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#drivers.writers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Anti-Canape Docs" class="md-header__button md-logo" aria-label="Anti-Canape Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Anti-Canape Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Writer
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Anti-Canape Docs" class="md-nav__button md-logo" aria-label="Anti-Canape Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Anti-Canape Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    How-To Guides
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            How-To Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    CAN Messages
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            CAN Messages
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-guides/writingCanMsg/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Writing CAN Messages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-guides/readingCanMsg/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reading CAN Messages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    SDO Messages
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            SDO Messages
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-guides/writingSdoParam/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Writing SDO Messages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-guides/readingSdoParam/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reading SDO Messages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-guides/gettingSdoResponse/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get SDO Response Message
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Script Manager
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Script Manager
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-guides/automatorGetABus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting a CAN Bus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-guides/writingSdoDict/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Writing a SDO Dictionary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-guides/readingSdoList/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reading a SDO List
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-guides/addAScript/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adding to the Script Manager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-guides/runAScript/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Running a Script
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    DBC and DOT
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            DBC and DOT
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-guides/loadDbc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Load a new DBC file
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-guides/loadDot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Load a new DOT file
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-guides/loadSavedDbcDictionaries/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Load saved DBC dictionaries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-guides/loadSavedDotDictionaries/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Load saved DOT dictionaries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-guides/getSignalDictionary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get CAN Message
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-guides/getSdoIndex/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get SDO Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Library API
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Library API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../automator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Automator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../readers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reader
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Writer
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Writer
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#drivers.writers" class="md-nav__link">
+    writers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#drivers.writers.ACWriter" class="md-nav__link">
+    ACWriter
+  </a>
+  
+    <nav class="md-nav" aria-label="ACWriter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#drivers.writers.ACWriter.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.writers.ACWriter.constantCanWriteOnID" class="md-nav__link">
+    constantCanWriteOnID()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.writers.ACWriter.constantCanWriteRawOnID" class="md-nav__link">
+    constantCanWriteRawOnID()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.writers.ACWriter.loadDotParser" class="md-nav__link">
+    loadDotParser()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.writers.ACWriter.singleCanWriteOnID" class="md-nav__link">
+    singleCanWriteOnID()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.writers.ACWriter.singleCanWriteRawOnID" class="md-nav__link">
+    singleCanWriteRawOnID()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.writers.ACWriter.singleSdoWrite" class="md-nav__link">
+    singleSdoWrite()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dbcAutoParse/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DBC Parse
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dotAutoParse/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DOT Parse
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explanation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Project Background
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#drivers.writers" class="md-nav__link">
+    writers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#drivers.writers.ACWriter" class="md-nav__link">
+    ACWriter
+  </a>
+  
+    <nav class="md-nav" aria-label="ACWriter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#drivers.writers.ACWriter.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.writers.ACWriter.constantCanWriteOnID" class="md-nav__link">
+    constantCanWriteOnID()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.writers.ACWriter.constantCanWriteRawOnID" class="md-nav__link">
+    constantCanWriteRawOnID()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.writers.ACWriter.loadDotParser" class="md-nav__link">
+    loadDotParser()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.writers.ACWriter.singleCanWriteOnID" class="md-nav__link">
+    singleCanWriteOnID()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.writers.ACWriter.singleCanWriteRawOnID" class="md-nav__link">
+    singleCanWriteRawOnID()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drivers.writers.ACWriter.singleSdoWrite" class="md-nav__link">
+    singleSdoWrite()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Writer</h1>
+
+<p><strong>CC Anti-Canape: Python-CAN Writing Interface Application</strong></p>
+<p>Author: Chris Hinkson<br />
+   Email: Christopher.Hinkson@clubcar.com  </p>
+<p>Desc: This application is designed to provide writing access to CAN communication from within python as a standalone application.  </p>
+<p>Github: https://github.com/chrisInTheCode/CC-Anti-Canape<br />
+   --&gt; To get access to the github repository, please send me an email at the above address  </p>
+<p>References:<br />
+   --&gt; https://python-can.readthedocs.io/en/stable/<br />
+   --&gt; https://cantools.readthedocs.io/en/latest/  </p>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="drivers.writers"></a>
+  <div class="doc doc-contents first">
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+
+<h2 id="drivers.writers.ACWriter" class="doc doc-heading">
+          <code>ACWriter</code>
+
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+
+  
+      <p>Provides a thread-based approach for high-level CAN writing.</p>
+<p>This class provides total writing functionality for CAN communication, and by extension, SDO protocol. It provides a variety of methods to complete various writing tasks and offers extensive capability in terms of data acquisition and handling. It provides a writing object for CAN messages, implements the python-can module as the backend API for CAN communication, uses can-tools for message decoding, CC DBC-Auto-Parse for custom dbc parsing, and CC DOT-Auto-Parse for custom dot parsing. See each individual method for further documentation on method functionality.</p>
+
+
+
+<p><strong>Examples:</strong></p>
+    <p>myNewWriter = ACWriter(myBusInstance)</p>
+
+
+
+  <p><strong>Attributes:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>bus</code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The instance's can.Bus object to read CAN messages on.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+            <details class="quote">
+              <summary>Source code in <code>drivers\writers.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 29</span>
+<span class="normal"> 30</span>
+<span class="normal"> 31</span>
+<span class="normal"> 32</span>
+<span class="normal"> 33</span>
+<span class="normal"> 34</span>
+<span class="normal"> 35</span>
+<span class="normal"> 36</span>
+<span class="normal"> 37</span>
+<span class="normal"> 38</span>
+<span class="normal"> 39</span>
+<span class="normal"> 40</span>
+<span class="normal"> 41</span>
+<span class="normal"> 42</span>
+<span class="normal"> 43</span>
+<span class="normal"> 44</span>
+<span class="normal"> 45</span>
+<span class="normal"> 46</span>
+<span class="normal"> 47</span>
+<span class="normal"> 48</span>
+<span class="normal"> 49</span>
+<span class="normal"> 50</span>
+<span class="normal"> 51</span>
+<span class="normal"> 52</span>
+<span class="normal"> 53</span>
+<span class="normal"> 54</span>
+<span class="normal"> 55</span>
+<span class="normal"> 56</span>
+<span class="normal"> 57</span>
+<span class="normal"> 58</span>
+<span class="normal"> 59</span>
+<span class="normal"> 60</span>
+<span class="normal"> 61</span>
+<span class="normal"> 62</span>
+<span class="normal"> 63</span>
+<span class="normal"> 64</span>
+<span class="normal"> 65</span>
+<span class="normal"> 66</span>
+<span class="normal"> 67</span>
+<span class="normal"> 68</span>
+<span class="normal"> 69</span>
+<span class="normal"> 70</span>
+<span class="normal"> 71</span>
+<span class="normal"> 72</span>
+<span class="normal"> 73</span>
+<span class="normal"> 74</span>
+<span class="normal"> 75</span>
+<span class="normal"> 76</span>
+<span class="normal"> 77</span>
+<span class="normal"> 78</span>
+<span class="normal"> 79</span>
+<span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span>
+<span class="normal">145</span>
+<span class="normal">146</span>
+<span class="normal">147</span>
+<span class="normal">148</span>
+<span class="normal">149</span>
+<span class="normal">150</span>
+<span class="normal">151</span>
+<span class="normal">152</span>
+<span class="normal">153</span>
+<span class="normal">154</span>
+<span class="normal">155</span>
+<span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span>
+<span class="normal">159</span>
+<span class="normal">160</span>
+<span class="normal">161</span>
+<span class="normal">162</span>
+<span class="normal">163</span>
+<span class="normal">164</span>
+<span class="normal">165</span>
+<span class="normal">166</span>
+<span class="normal">167</span>
+<span class="normal">168</span>
+<span class="normal">169</span>
+<span class="normal">170</span>
+<span class="normal">171</span>
+<span class="normal">172</span>
+<span class="normal">173</span>
+<span class="normal">174</span>
+<span class="normal">175</span>
+<span class="normal">176</span>
+<span class="normal">177</span>
+<span class="normal">178</span>
+<span class="normal">179</span>
+<span class="normal">180</span>
+<span class="normal">181</span>
+<span class="normal">182</span>
+<span class="normal">183</span>
+<span class="normal">184</span>
+<span class="normal">185</span>
+<span class="normal">186</span>
+<span class="normal">187</span>
+<span class="normal">188</span>
+<span class="normal">189</span>
+<span class="normal">190</span>
+<span class="normal">191</span>
+<span class="normal">192</span>
+<span class="normal">193</span>
+<span class="normal">194</span>
+<span class="normal">195</span>
+<span class="normal">196</span>
+<span class="normal">197</span>
+<span class="normal">198</span>
+<span class="normal">199</span>
+<span class="normal">200</span>
+<span class="normal">201</span>
+<span class="normal">202</span>
+<span class="normal">203</span>
+<span class="normal">204</span>
+<span class="normal">205</span>
+<span class="normal">206</span>
+<span class="normal">207</span>
+<span class="normal">208</span>
+<span class="normal">209</span>
+<span class="normal">210</span>
+<span class="normal">211</span>
+<span class="normal">212</span>
+<span class="normal">213</span>
+<span class="normal">214</span>
+<span class="normal">215</span>
+<span class="normal">216</span>
+<span class="normal">217</span>
+<span class="normal">218</span>
+<span class="normal">219</span>
+<span class="normal">220</span>
+<span class="normal">221</span>
+<span class="normal">222</span>
+<span class="normal">223</span>
+<span class="normal">224</span>
+<span class="normal">225</span>
+<span class="normal">226</span>
+<span class="normal">227</span>
+<span class="normal">228</span>
+<span class="normal">229</span>
+<span class="normal">230</span>
+<span class="normal">231</span>
+<span class="normal">232</span>
+<span class="normal">233</span>
+<span class="normal">234</span>
+<span class="normal">235</span>
+<span class="normal">236</span>
+<span class="normal">237</span>
+<span class="normal">238</span>
+<span class="normal">239</span>
+<span class="normal">240</span>
+<span class="normal">241</span>
+<span class="normal">242</span>
+<span class="normal">243</span>
+<span class="normal">244</span>
+<span class="normal">245</span>
+<span class="normal">246</span>
+<span class="normal">247</span>
+<span class="normal">248</span>
+<span class="normal">249</span>
+<span class="normal">250</span>
+<span class="normal">251</span>
+<span class="normal">252</span>
+<span class="normal">253</span>
+<span class="normal">254</span>
+<span class="normal">255</span>
+<span class="normal">256</span>
+<span class="normal">257</span>
+<span class="normal">258</span>
+<span class="normal">259</span>
+<span class="normal">260</span>
+<span class="normal">261</span>
+<span class="normal">262</span>
+<span class="normal">263</span>
+<span class="normal">264</span>
+<span class="normal">265</span>
+<span class="normal">266</span>
+<span class="normal">267</span>
+<span class="normal">268</span>
+<span class="normal">269</span>
+<span class="normal">270</span>
+<span class="normal">271</span>
+<span class="normal">272</span>
+<span class="normal">273</span>
+<span class="normal">274</span>
+<span class="normal">275</span>
+<span class="normal">276</span>
+<span class="normal">277</span>
+<span class="normal">278</span>
+<span class="normal">279</span>
+<span class="normal">280</span>
+<span class="normal">281</span>
+<span class="normal">282</span>
+<span class="normal">283</span>
+<span class="normal">284</span>
+<span class="normal">285</span>
+<span class="normal">286</span>
+<span class="normal">287</span>
+<span class="normal">288</span>
+<span class="normal">289</span>
+<span class="normal">290</span>
+<span class="normal">291</span>
+<span class="normal">292</span>
+<span class="normal">293</span>
+<span class="normal">294</span>
+<span class="normal">295</span>
+<span class="normal">296</span>
+<span class="normal">297</span>
+<span class="normal">298</span>
+<span class="normal">299</span>
+<span class="normal">300</span>
+<span class="normal">301</span>
+<span class="normal">302</span>
+<span class="normal">303</span>
+<span class="normal">304</span>
+<span class="normal">305</span>
+<span class="normal">306</span>
+<span class="normal">307</span>
+<span class="normal">308</span>
+<span class="normal">309</span>
+<span class="normal">310</span>
+<span class="normal">311</span>
+<span class="normal">312</span>
+<span class="normal">313</span>
+<span class="normal">314</span>
+<span class="normal">315</span>
+<span class="normal">316</span>
+<span class="normal">317</span>
+<span class="normal">318</span>
+<span class="normal">319</span>
+<span class="normal">320</span>
+<span class="normal">321</span>
+<span class="normal">322</span>
+<span class="normal">323</span>
+<span class="normal">324</span>
+<span class="normal">325</span>
+<span class="normal">326</span>
+<span class="normal">327</span>
+<span class="normal">328</span>
+<span class="normal">329</span>
+<span class="normal">330</span>
+<span class="normal">331</span>
+<span class="normal">332</span>
+<span class="normal">333</span>
+<span class="normal">334</span>
+<span class="normal">335</span>
+<span class="normal">336</span>
+<span class="normal">337</span>
+<span class="normal">338</span>
+<span class="normal">339</span>
+<span class="normal">340</span>
+<span class="normal">341</span>
+<span class="normal">342</span>
+<span class="normal">343</span>
+<span class="normal">344</span>
+<span class="normal">345</span>
+<span class="normal">346</span>
+<span class="normal">347</span>
+<span class="normal">348</span>
+<span class="normal">349</span>
+<span class="normal">350</span>
+<span class="normal">351</span>
+<span class="normal">352</span>
+<span class="normal">353</span>
+<span class="normal">354</span>
+<span class="normal">355</span>
+<span class="normal">356</span>
+<span class="normal">357</span>
+<span class="normal">358</span>
+<span class="normal">359</span>
+<span class="normal">360</span>
+<span class="normal">361</span>
+<span class="normal">362</span>
+<span class="normal">363</span>
+<span class="normal">364</span>
+<span class="normal">365</span>
+<span class="normal">366</span>
+<span class="normal">367</span>
+<span class="normal">368</span>
+<span class="normal">369</span>
+<span class="normal">370</span>
+<span class="normal">371</span>
+<span class="normal">372</span>
+<span class="normal">373</span>
+<span class="normal">374</span>
+<span class="normal">375</span>
+<span class="normal">376</span>
+<span class="normal">377</span>
+<span class="normal">378</span>
+<span class="normal">379</span>
+<span class="normal">380</span>
+<span class="normal">381</span>
+<span class="normal">382</span>
+<span class="normal">383</span>
+<span class="normal">384</span>
+<span class="normal">385</span>
+<span class="normal">386</span>
+<span class="normal">387</span>
+<span class="normal">388</span>
+<span class="normal">389</span>
+<span class="normal">390</span>
+<span class="normal">391</span>
+<span class="normal">392</span>
+<span class="normal">393</span>
+<span class="normal">394</span>
+<span class="normal">395</span>
+<span class="normal">396</span>
+<span class="normal">397</span>
+<span class="normal">398</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">ACWriter</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39; Provides a thread-based approach for high-level CAN writing.</span>
+
+<span class="sd">    This class provides total writing functionality for CAN communication, and by extension, SDO protocol. It provides a variety of methods to complete various writing tasks and offers extensive capability in terms of data acquisition and handling. It provides a writing object for CAN messages, implements the python-can module as the backend API for CAN communication, uses can-tools for message decoding, CC DBC-Auto-Parse for custom dbc parsing, and CC DOT-Auto-Parse for custom dot parsing. See each individual method for further documentation on method functionality.</span>
+
+<span class="sd">    Examples:</span>
+<span class="sd">        myNewWriter = ACWriter(myBusInstance)</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        bus: The instance&#39;s can.Bus object to read CAN messages on.</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="c1">#########################</span>
+    <span class="c1"># OBJECT INITIALIZATION #</span>
+    <span class="c1">#########################</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">busIn</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&#39;&#39;&#39; Initializes the reader class.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            busIn (Bus): The bus object to read CAN messages on.</span>
+<span class="sd">        &#39;&#39;&#39;</span>    
+        <span class="c1"># Set the bus</span>
+        <span class="c1"># NOTE: The bus can be closed at the end of main program execution. If the bus is closed, the same bus object will need to be opened or this class will need</span>
+        <span class="c1">#       to be reinitialized</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">bus</span> <span class="o">=</span> <span class="n">busIn</span>
+
+        <span class="c1"># Configure the DBC</span>
+        <span class="c1"># [https://cantools.readthedocs.io/en/latest/]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dbc</span> <span class="o">=</span> <span class="n">cantools</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">load_file</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;ccPythonDBC.dbc&#39;</span><span class="p">,</span> <span class="n">cache_dir</span><span class="o">=</span><span class="s1">&#39;./CANcache&#39;</span><span class="p">)</span> <span class="c1">#DBC Database</span>
+
+        <span class="c1"># In case SDO support enabled, load the DOT parser here</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dotParser</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="c1"># Terminal Message</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CC Anti-Canape: Writer Object Has Been Initialized!&quot;</span><span class="p">)</span>
+
+
+    <span class="c1">############################</span>
+    <span class="c1"># SINGLE WRITING TO CANBUS #</span>
+    <span class="c1">############################</span>
+    <span class="k">def</span> <span class="nf">singleCanWriteOnID</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">IDIn</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span> <span class="n">signalDictIn</span><span class="p">:</span><span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&#39;&#39;&#39; This method encodes an ID and signal dictionary into a CAN Message Object and sends it on the instance CAN bus.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            IDIn (int): The ID of the Message to send.</span>
+<span class="sd">            signalDictIn (dict): A dictionary of signal:value pairs to write.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            bool: True if no errors occured during execution, False otherwise.</span>
+<span class="sd">        &#39;&#39;&#39;</span>        
+        <span class="c1"># Create a message and send it</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="c1"># Encode data into byte array for CAN communication using the DBC file</span>
+            <span class="c1"># [https://cantools.readthedocs.io/en/latest/#cantools.database.can.Database.encode_message]</span>
+            <span class="n">encodedData</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dbc</span><span class="o">.</span><span class="n">encode_message</span><span class="p">(</span><span class="n">IDIn</span><span class="p">,</span> <span class="n">signalDictIn</span><span class="p">)</span>
+
+            <span class="c1"># Create a message object with the ID and encoded data (assumed default message flags)</span>
+            <span class="c1"># [https://python-can.readthedocs.io/en/stable/message.html#module-can]</span>
+            <span class="n">messageOutbound</span> <span class="o">=</span> <span class="n">Message</span><span class="p">(</span><span class="n">arbitration_id</span><span class="o">=</span><span class="n">IDIn</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">encodedData</span><span class="p">,</span> <span class="n">is_extended_id</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+            <span class="c1">#Send the message on the bus</span>
+            <span class="c1"># [https://python-can.readthedocs.io/en/stable/bus.html#can.Bus.send]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">bus</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">msg</span><span class="o">=</span><span class="n">messageOutbound</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+
+        <span class="c1"># If there is an error writing a message, this Exception is thrown</span>
+        <span class="c1"># [https://python-can.readthedocs.io/en/stable/errors.html#can.exceptions.CanOperationError]</span>
+        <span class="k">except</span> <span class="n">CanError</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CC Anti-Canape: THERE WAS AN ERROR WRITING TO THE BUS.&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Return true indicating no errors were given</span>
+        <span class="k">return</span> <span class="kc">True</span>
+
+
+    <span class="c1">#######################################</span>
+    <span class="c1"># SINGLE WRITE ON ID | WITH RAW INPUT #</span>
+    <span class="c1">#######################################</span>
+    <span class="k">def</span> <span class="nf">singleCanWriteRawOnID</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">IDIn</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">:</span><span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">bytearray</span><span class="p">,</span> <span class="nb">list</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&#39;&#39;&#39;This method encodes an ID and raw byte array into a CAN Message Object and sends it on the instance CAN bus.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            IDIn (int): The ID of the Message to send.</span>
+<span class="sd">            bytes (str, bytearray, or list of strings): The Message payload, in raw bytes. Can be given as a string, bytearray, or list of strings (where each list element is a byte of a bytearray).</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            CanError: Occurs when there is an error while attempting to communicate via CAN.</span>
+<span class="sd">            CanError: Occurs when there is an error while attempting to communicate via CAN.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            bool: True if no errors occured during execution, False otherwise.</span>
+<span class="sd">        &#39;&#39;&#39;</span>        
+        <span class="c1"># Create a message and send it</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="c1"># If data input is given as bytearray</span>
+            <span class="c1"># [https://docs.python.org/3/library/stdtypes.html#bytearray]</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">bytes</span><span class="p">,</span> <span class="nb">bytearray</span><span class="p">):</span>
+                <span class="c1"># Create a message object with the ID and byte array</span>
+                <span class="c1"># [https://python-can.readthedocs.io/en/stable/message.html#module-can]</span>
+                <span class="n">messageOutbound</span> <span class="o">=</span> <span class="n">Message</span><span class="p">(</span><span class="n">arbitration_id</span><span class="o">=</span><span class="n">IDIn</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="nb">bytes</span><span class="p">,</span> <span class="n">is_extended_id</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+            <span class="c1"># If data input is given as string</span>
+            <span class="c1"># [https://docs.python.org/3/library/stdtypes.html#bytearray.fromhex]</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">bytes</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+                <span class="c1"># Create a message object with the ID and string</span>
+                <span class="c1"># [https://python-can.readthedocs.io/en/stable/message.html#module-can]</span>
+                <span class="n">stringAsByteArray</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="o">.</span><span class="n">fromhex</span><span class="p">(</span><span class="nb">bytes</span><span class="p">)</span>
+                <span class="n">messageOutbound</span> <span class="o">=</span> <span class="n">Message</span><span class="p">(</span><span class="n">arbitration_id</span><span class="o">=</span><span class="n">IDIn</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">stringAsByteArray</span><span class="p">,</span> <span class="n">is_extended_id</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+            <span class="c1"># If data input is given as list</span>
+            <span class="c1"># [https://www.dotnetperls.com/bytes-python]</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">bytes</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+                <span class="c1"># If list is composed of integers</span>
+                <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">bytes</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nb">int</span><span class="p">):</span>
+                    <span class="c1"># Create a message object with the ID and list</span>
+                    <span class="c1"># [https://python-can.readthedocs.io/en/stable/message.html#module-can]</span>
+                    <span class="n">listAsByteArray</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="p">(</span><span class="nb">bytes</span><span class="p">)</span>
+                    <span class="n">messageOutbound</span> <span class="o">=</span> <span class="n">Message</span><span class="p">(</span><span class="n">arbitration_id</span><span class="o">=</span><span class="n">IDIn</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">listAsByteArray</span><span class="p">,</span> <span class="n">is_extended_id</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+                <span class="c1"># If list is composed of strings</span>
+                <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">bytes</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nb">str</span><span class="p">):</span>
+                    <span class="c1"># Create a message object with the ID and list</span>
+                    <span class="c1"># [https://python-can.readthedocs.io/en/stable/message.html#module-can]</span>
+                    <span class="n">listAsString</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">bytes</span><span class="p">)</span>
+                    <span class="n">listAsStringAsByteArray</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="o">.</span><span class="n">fromhex</span><span class="p">(</span><span class="n">listAsString</span><span class="p">)</span>
+                    <span class="n">messageOutbound</span> <span class="o">=</span> <span class="n">Message</span><span class="p">(</span><span class="n">arbitration_id</span><span class="o">=</span><span class="n">IDIn</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">listAsStringAsByteArray</span><span class="p">,</span> <span class="n">is_extended_id</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+                <span class="c1">#If list is composed of NEITHER int NOR str</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CC Anti-Canape: Got an incorrect format for the input of bytes!&quot;</span><span class="p">)</span>
+                    <span class="k">raise</span> <span class="n">CanError</span><span class="p">(</span><span class="n">message</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+            <span class="k">else</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CC Anti-Canape: Got an incorrect format for the input of bytes!&quot;</span><span class="p">)</span>
+                <span class="k">raise</span> <span class="n">CanError</span><span class="p">(</span><span class="n">message</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+            <span class="c1">#Send the message on the bus</span>
+            <span class="c1"># [https://python-can.readthedocs.io/en/stable/bus.html#can.Bus.send]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">bus</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">msg</span><span class="o">=</span><span class="n">messageOutbound</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+        <span class="c1"># If there is an error writing a message, this Exception is thrown</span>
+        <span class="c1"># [https://python-can.readthedocs.io/en/stable/errors.html#can.exceptions.CanOperationError]</span>
+        <span class="k">except</span> <span class="n">CanError</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CC Anti-Canape: THERE WAS AN ERROR WRITING TO THE BUS.&quot;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="kc">False</span>
+
+        <span class="c1"># Return true indicating no errors were given</span>
+        <span class="k">return</span> <span class="kc">True</span>
+
+
+    <span class="c1">####################################</span>
+    <span class="c1"># CONSTANT WRITING ON ID TO CANBUS #</span>
+    <span class="c1">####################################</span>
+    <span class="k">def</span> <span class="nf">constantCanWriteOnID</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">IDIn</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span> <span class="n">signalDictIn</span><span class="p">:</span><span class="nb">dict</span><span class="p">,</span> <span class="n">period</span><span class="p">:</span><span class="nb">float</span><span class="p">,</span> <span class="n">duration</span><span class="p">:</span><span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>  
+<span class="w">        </span><span class="sd">&#39;&#39;&#39; This method provides efficient access to the CAN bus for continually writing a CAN message for an extended period of time. It keeps one instance open for the bus and writer, nulling the need to open a new instance connection for each message. It operates on a backend thread managed by python-can, but the bus has been internalized to be thread-safe, allowing several cross threads to operate concurrently on the bus. </span>
+
+<span class="sd">        It will continue sending a CAN Message on the instance bus with given ID and signalDict every period (s) for time duration (s).</span>
+
+<span class="sd">        Note: If no duration time is specified, it defaults to None, which continues indefinitely. In this case, the thread will need to be closed, or program execution halted with Keyboard Interrupt (CTRL + C).</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            IDIn (int): The ID of the CAN Message to encode and write on the bus.</span>
+<span class="sd">            signalDictIn (dict): A dictionary with signal:value pairs to encode and write on the bus.</span>
+<span class="sd">            period (float): The time in seconds (s) to wait between sending each message.</span>
+<span class="sd">            duration (float): The length of time in seconds (s) to continue sending the message for.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            bool: True if no errors occured during execution, False otherwise.</span>
+<span class="sd">        &#39;&#39;&#39;</span>          
+        <span class="c1"># Create a message and send it</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="c1"># Encode data into byte array for CAN communication using the DBC file</span>
+            <span class="c1"># [https://cantools.readthedocs.io/en/latest/#cantools.database.can.Database.encode_message]</span>
+            <span class="n">encodedData</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dbc</span><span class="o">.</span><span class="n">encode_message</span><span class="p">(</span><span class="n">IDIn</span><span class="p">,</span> <span class="n">signalDictIn</span><span class="p">)</span>
+
+            <span class="c1"># Create a message object with the ID and encoded data (assumed default message flags)</span>
+            <span class="c1"># [https://python-can.readthedocs.io/en/stable/message.html#module-can]</span>
+            <span class="n">messageOutbound</span> <span class="o">=</span> <span class="n">Message</span><span class="p">(</span><span class="n">arbitration_id</span><span class="o">=</span><span class="n">IDIn</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">encodedData</span><span class="p">)</span>
+
+            <span class="c1"># Create the periodic task</span>
+            <span class="c1"># [https://python-can.readthedocs.io/en/master/bcm.html]</span>
+            <span class="n">task</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">bus</span><span class="o">.</span><span class="n">send_periodic</span><span class="p">(</span><span class="n">msgs</span><span class="o">=</span><span class="n">messageOutbound</span><span class="p">,</span> <span class="n">period</span><span class="o">=</span><span class="n">period</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="n">duration</span><span class="p">)</span>
+            <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">task</span><span class="p">,</span> <span class="n">CyclicSendTaskABC</span><span class="p">)</span>
+            <span class="n">sleep</span><span class="p">(</span><span class="n">duration</span><span class="p">)</span>
+
+        <span class="c1"># If there is an error writing a message, this Exception is thrown</span>
+        <span class="c1"># [https://python-can.readthedocs.io/en/stable/errors.html#can.exceptions.CanOperationError]</span>
+        <span class="k">except</span> <span class="n">CanError</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CC Anti-Canape: THERE WAS AN ERROR WRITING TO THE BUS.&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Return true indicating no errors were given</span>
+        <span class="k">return</span> <span class="kc">True</span>
+
+
+    <span class="c1">#######################################</span>
+    <span class="c1"># SINGLE WRITE ON ID | WITH RAW INPUT #</span>
+    <span class="c1">#######################################</span>
+    <span class="k">def</span> <span class="nf">constantCanWriteRawOnID</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">IDIn</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">:</span><span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">bytearray</span><span class="p">,</span> <span class="nb">list</span><span class="p">],</span> <span class="n">period</span><span class="p">:</span><span class="nb">float</span><span class="p">,</span> <span class="n">duration</span><span class="p">:</span><span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&#39;&#39;&#39; This method provides efficient access to the CAN bus for continually writing a CAN message for an extended period of time. It keeps one instance open for the bus and writer, nulling the need to open a new instance connection for each message. It operates on a backend thread managed by python-can, but the bus has been internalized to be thread-safe, allowing several cross threads to operate concurrently on the bus. </span>
+
+<span class="sd">        It will continue sending a CAN Message on the instance bus with given ID and bytes payload every period (s) for time duration (s).</span>
+
+<span class="sd">        Note: If no duration time is specified, it defaults to None, which continues indefinitely. In this case, the thread will need to be closed, or program execution halted with Keyboard Interrupt (CTRL + C).</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            IDIn (int): The ID of the CAN Message to write on the bus.</span>
+<span class="sd">            bytes (str, bytearray, or list of str): The Message payload, in raw bytes. Can be given as a string, bytearray, or list of strings (where each list element is a bit of a bytearray).</span>
+<span class="sd">            period (float): The time in seconds (s) to wait between sending each message.</span>
+<span class="sd">            duration (float): The length of time in seconds (s) to continue sending the message for.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            bool: True if no errors occured during execution, False otherwise.</span>
+<span class="sd">        &#39;&#39;&#39;</span> 
+        <span class="c1"># Create a message and send it</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="c1"># If data input is given as bytearray</span>
+            <span class="c1"># [https://docs.python.org/3/library/stdtypes.html#bytearray]</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">bytes</span><span class="p">,</span> <span class="nb">bytearray</span><span class="p">):</span>
+                <span class="c1"># Create a message object with the ID and byte array</span>
+                <span class="c1"># [https://python-can.readthedocs.io/en/stable/message.html#module-can]</span>
+                <span class="n">messageOutbound</span> <span class="o">=</span> <span class="n">Message</span><span class="p">(</span><span class="n">arbitration_id</span><span class="o">=</span><span class="n">IDIn</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="nb">bytes</span><span class="p">,</span> <span class="n">is_extended_id</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+            <span class="c1"># If data input is given as string</span>
+            <span class="c1"># [https://docs.python.org/3/library/stdtypes.html#bytearray.fromhex]</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">bytes</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+                <span class="c1"># Create a message object with the ID and string</span>
+                <span class="c1"># [https://python-can.readthedocs.io/en/stable/message.html#module-can]</span>
+                <span class="n">stringAsByteArray</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="o">.</span><span class="n">fromhex</span><span class="p">(</span><span class="nb">bytes</span><span class="p">)</span>
+                <span class="n">messageOutbound</span> <span class="o">=</span> <span class="n">Message</span><span class="p">(</span><span class="n">arbitration_id</span><span class="o">=</span><span class="n">IDIn</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">stringAsByteArray</span><span class="p">,</span> <span class="n">is_extended_id</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+            <span class="c1"># If data input is given as list</span>
+            <span class="c1"># [https://www.dotnetperls.com/bytes-python]</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">bytes</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+                <span class="c1"># If list is composed of integers</span>
+                <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">bytes</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nb">int</span><span class="p">):</span>
+                    <span class="c1"># Create a message object with the ID and list</span>
+                    <span class="c1"># [https://python-can.readthedocs.io/en/stable/message.html#module-can]</span>
+                    <span class="n">listAsByteArray</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="p">(</span><span class="nb">bytes</span><span class="p">)</span>
+                    <span class="n">messageOutbound</span> <span class="o">=</span> <span class="n">Message</span><span class="p">(</span><span class="n">arbitration_id</span><span class="o">=</span><span class="n">IDIn</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">listAsByteArray</span><span class="p">,</span> <span class="n">is_extended_id</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+                <span class="c1"># If list is composed of strings</span>
+                <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">bytes</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nb">str</span><span class="p">):</span>
+                    <span class="c1"># Create a message object with the ID and list</span>
+                    <span class="c1"># [https://python-can.readthedocs.io/en/stable/message.html#module-can]</span>
+                    <span class="n">listAsString</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">bytes</span><span class="p">)</span>
+                    <span class="n">listAsStringAsByteArray</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="o">.</span><span class="n">fromhex</span><span class="p">(</span><span class="n">listAsString</span><span class="p">)</span>
+                    <span class="n">messageOutbound</span> <span class="o">=</span> <span class="n">Message</span><span class="p">(</span><span class="n">arbitration_id</span><span class="o">=</span><span class="n">IDIn</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">listAsStringAsByteArray</span><span class="p">,</span> <span class="n">is_extended_id</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+                <span class="c1">#If list is composed of NEITHER int NOR str</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CC Anti-Canape: Got an incorrect format for the input of bytes!&quot;</span><span class="p">)</span>
+                    <span class="k">raise</span> <span class="n">CanError</span><span class="p">(</span><span class="n">message</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+            <span class="k">else</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CC Anti-Canape: Got an incorrect format for the input of bytes!&quot;</span><span class="p">)</span>
+                <span class="k">raise</span> <span class="n">CanError</span><span class="p">(</span><span class="n">message</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+            <span class="c1"># Create the periodic task</span>
+            <span class="c1"># [https://python-can.readthedocs.io/en/master/bcm.html]</span>
+            <span class="n">task</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">bus</span><span class="o">.</span><span class="n">send_periodic</span><span class="p">(</span><span class="n">msgs</span><span class="o">=</span><span class="n">messageOutbound</span><span class="p">,</span> <span class="n">period</span><span class="o">=</span><span class="n">period</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="n">duration</span><span class="p">)</span>
+            <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">task</span><span class="p">,</span> <span class="n">CyclicSendTaskABC</span><span class="p">)</span>
+            <span class="n">sleep</span><span class="p">(</span><span class="n">duration</span><span class="p">)</span>
+
+        <span class="c1"># If there is an error writing a message, this Exception is thrown</span>
+        <span class="c1"># [https://python-can.readthedocs.io/en/stable/errors.html#can.exceptions.CanOperationError]</span>
+        <span class="k">except</span> <span class="n">CanError</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CC AntiCanape: THERE WAS AN ERROR WRITING TO THE BUS.&quot;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="kc">False</span>
+
+        <span class="c1"># Return true indicating no errors were given</span>
+        <span class="k">return</span> <span class="kc">True</span>
+
+
+    <span class="c1">###################################</span>
+    <span class="c1"># LOAD A DOT PARSER INTO INSTANCE #</span>
+    <span class="c1">###################################</span>
+    <span class="k">def</span> <span class="nf">loadDotParser</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dotParser</span><span class="p">:</span><span class="nb">object</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&#39;&#39;&#39; This method is designed to load a DOT parser object into the writer instance for use with SDO messages. Specifically, it is used in singleSdoWrite() and constantSdoWrite() to lookup a hex index for a given SDO parameter name.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            dotParser (dotParse Object): A dotParse() object to be used for looking up hex ID&#39;s and parameter names.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            bool: True if no errors occured during execution, False otherwise.</span>
+<span class="sd">        &#39;&#39;&#39;</span>        
+        <span class="bp">self</span><span class="o">.</span><span class="n">dotParser</span> <span class="o">=</span> <span class="n">dotParser</span>
+        <span class="k">return</span> <span class="kc">True</span>
+
+
+    <span class="c1">####################</span>
+    <span class="c1"># SINGLE SDO WRITE #</span>
+    <span class="c1">####################</span>
+    <span class="k">def</span> <span class="nf">singleSdoWrite</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mainId</span><span class="p">:</span><span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">],</span> <span class="n">payloadIn</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span> <span class="n">subId</span><span class="p">:</span><span class="nb">str</span><span class="o">=</span><span class="s2">&quot;00&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&#39;&#39;&#39; This method is designed to write a single SDO message on the CANBUS.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            mainId (str or int): The SDO Index (ID) to write to. It can either be a hex index starting with &#39;0x&#39;, a decimal index only consisting of integers, or the parameter name itself as a string.</span>
+<span class="sd">            payloadIn (int): The payload to send off in decimal representation. Can represent 0-8 bits when converted to hex. </span>
+<span class="sd">            subId (str): The SDO Sub-Index(Sub-ID) to write to. It must be in hex. Defaults to &quot;00&quot;.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            Exception: If the payload is not 0-8 bytes, then an exception is thrown.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            bool: True if no errors occured during execution, False otherwise.</span>
+<span class="sd">        &#39;&#39;&#39;</span>       
+
+        <span class="c1"># Redefine the ID to be a string for checking</span>
+        <span class="n">strId</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">mainId</span><span class="p">)</span>
+
+        <span class="c1"># Initialize a blank splitHexId for Endian conversion</span>
+        <span class="n">hexId</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+
+        <span class="c1"># Initialize a hexPayload for conversion and finalPayload for post-conversion</span>
+        <span class="c1"># Chop off &#39;0x&#39; from front of hex string</span>
+        <span class="n">hexPayload</span> <span class="o">=</span> <span class="nb">hex</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">payloadIn</span><span class="p">))[</span><span class="mi">2</span><span class="p">:]</span>
+        <span class="n">finalPayload</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+
+        <span class="c1"># If the id begins with &#39;0x&#39;, it is hex ID</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">strId</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;0&#39;</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">strId</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;x&#39;</span><span class="p">):</span>
+            <span class="n">hexId</span> <span class="o">=</span> <span class="n">strId</span>
+
+        <span class="c1"># If the id is all numbers, it is decimal</span>
+        <span class="k">elif</span> <span class="p">(</span><span class="n">strId</span><span class="o">.</span><span class="n">isdigit</span><span class="p">()):</span>
+            <span class="c1"># Convert to int and save</span>
+            <span class="n">hexId</span> <span class="o">=</span> <span class="nb">hex</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">strId</span><span class="p">))</span>
+
+        <span class="c1"># Else, it is a parameter name, so call for hex ID</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="c1"># If the DOT parser has not been loaded, tell user to load it first</span>
+            <span class="k">if</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dotParser</span> <span class="o">==</span> <span class="kc">None</span><span class="p">):</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CC Anti-Canape: Please load DOT parser before writing using parameter names!&quot;</span><span class="p">)</span>
+                <span class="k">return</span> <span class="kc">False</span>
+
+            <span class="c1"># If the DOT parser has been loaded, use it to find hex ID</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">hexId</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dotParser</span><span class="o">.</span><span class="n">getHexIdFromParameterName</span><span class="p">(</span><span class="n">strId</span><span class="p">)</span>
+
+        <span class="c1"># Add initial write command identifier to payload</span>
+        <span class="n">finalPayload</span> <span class="o">+=</span> <span class="s2">&quot;23&quot;</span>
+
+        <span class="c1"># Convert to Little Endian and add to final payload </span>
+        <span class="n">finalPayload</span> <span class="o">+=</span> <span class="n">hexId</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexId</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexId</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexId</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+
+        <span class="c1"># Add the sub index to the final payload</span>
+        <span class="n">finalPayload</span> <span class="o">+=</span> <span class="n">subId</span>
+
+        <span class="c1"># Check the size of payloadIn and make proper bytestring</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">hexPayload</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+            <span class="n">finalPayload</span> <span class="o">+=</span> <span class="s2">&quot;00000000&quot;</span>
+        <span class="k">elif</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">hexPayload</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">):</span>
+            <span class="n">finalPayload</span> <span class="o">+=</span> <span class="s2">&quot;0&quot;</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;000000&quot;</span>
+        <span class="k">elif</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">hexPayload</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">):</span>
+            <span class="n">finalPayload</span> <span class="o">+=</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;000000&quot;</span>
+        <span class="k">elif</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">hexPayload</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span><span class="p">):</span>
+            <span class="n">finalPayload</span> <span class="o">+=</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;0&quot;</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;0000&quot;</span>
+        <span class="k">elif</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">hexPayload</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span><span class="p">):</span>
+            <span class="n">finalPayload</span> <span class="o">+=</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;0000&quot;</span>
+        <span class="k">elif</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">hexPayload</span><span class="p">)</span> <span class="o">==</span> <span class="mi">5</span><span class="p">):</span>
+            <span class="n">finalPayload</span> <span class="o">+=</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;0&quot;</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;00&quot;</span>
+        <span class="k">elif</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">hexPayload</span><span class="p">)</span> <span class="o">==</span> <span class="mi">6</span><span class="p">):</span>
+            <span class="n">finalPayload</span> <span class="o">+=</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;00&quot;</span>
+        <span class="k">elif</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">hexPayload</span><span class="p">)</span> <span class="o">==</span> <span class="mi">7</span><span class="p">):</span>
+            <span class="n">finalPayload</span> <span class="o">+=</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;0&quot;</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">elif</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">hexPayload</span><span class="p">)</span> <span class="o">==</span> <span class="mi">8</span><span class="p">):</span>
+            <span class="n">finalPayload</span> <span class="o">+=</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+
+        <span class="c1"># If the input payload was not 0-8 bits, raise exception </span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;CC Anti-Canape: Payload must be between 0 and 8 bits!&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Send the message</span>
+        <span class="k">return</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">singleCanWriteRawOnID</span><span class="p">(</span><span class="n">IDIn</span><span class="o">=</span><span class="mi">1589</span><span class="p">,</span> <span class="nb">bytes</span><span class="o">=</span><span class="n">finalPayload</span><span class="p">))</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h3 id="drivers.writers.ACWriter.__init__" class="doc doc-heading">
+          <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">busIn</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Initializes the reader class.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>busIn</code></td>
+          <td>
+                <code>Bus</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The bus object to read CAN messages on.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>drivers\writers.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">busIn</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39; Initializes the reader class.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        busIn (Bus): The bus object to read CAN messages on.</span>
+<span class="sd">    &#39;&#39;&#39;</span>    
+    <span class="c1"># Set the bus</span>
+    <span class="c1"># NOTE: The bus can be closed at the end of main program execution. If the bus is closed, the same bus object will need to be opened or this class will need</span>
+    <span class="c1">#       to be reinitialized</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">bus</span> <span class="o">=</span> <span class="n">busIn</span>
+
+    <span class="c1"># Configure the DBC</span>
+    <span class="c1"># [https://cantools.readthedocs.io/en/latest/]</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">dbc</span> <span class="o">=</span> <span class="n">cantools</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">load_file</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;ccPythonDBC.dbc&#39;</span><span class="p">,</span> <span class="n">cache_dir</span><span class="o">=</span><span class="s1">&#39;./CANcache&#39;</span><span class="p">)</span> <span class="c1">#DBC Database</span>
+
+    <span class="c1"># In case SDO support enabled, load the DOT parser here</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">dotParser</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="c1"># Terminal Message</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CC Anti-Canape: Writer Object Has Been Initialized!&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h3 id="drivers.writers.ACWriter.constantCanWriteOnID" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">constantCanWriteOnID</span><span class="p">(</span><span class="n">IDIn</span><span class="p">,</span> <span class="n">signalDictIn</span><span class="p">,</span> <span class="n">period</span><span class="p">,</span> <span class="n">duration</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>This method provides efficient access to the CAN bus for continually writing a CAN message for an extended period of time. It keeps one instance open for the bus and writer, nulling the need to open a new instance connection for each message. It operates on a backend thread managed by python-can, but the bus has been internalized to be thread-safe, allowing several cross threads to operate concurrently on the bus. </p>
+<p>It will continue sending a CAN Message on the instance bus with given ID and signalDict every period (s) for time duration (s).</p>
+<p>Note: If no duration time is specified, it defaults to None, which continues indefinitely. In this case, the thread will need to be closed, or program execution halted with Keyboard Interrupt (CTRL + C).</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>IDIn</code></td>
+          <td>
+                <code>int</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The ID of the CAN Message to encode and write on the bus.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>signalDictIn</code></td>
+          <td>
+                <code>dict</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>A dictionary with signal:value pairs to encode and write on the bus.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>period</code></td>
+          <td>
+                <code>float</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The time in seconds (s) to wait between sending each message.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>duration</code></td>
+          <td>
+                <code>float</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The length of time in seconds (s) to continue sending the message for.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>bool</code></td>          <td>
+                <code>bool</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>True if no errors occured during execution, False otherwise.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>drivers\writers.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">179</span>
+<span class="normal">180</span>
+<span class="normal">181</span>
+<span class="normal">182</span>
+<span class="normal">183</span>
+<span class="normal">184</span>
+<span class="normal">185</span>
+<span class="normal">186</span>
+<span class="normal">187</span>
+<span class="normal">188</span>
+<span class="normal">189</span>
+<span class="normal">190</span>
+<span class="normal">191</span>
+<span class="normal">192</span>
+<span class="normal">193</span>
+<span class="normal">194</span>
+<span class="normal">195</span>
+<span class="normal">196</span>
+<span class="normal">197</span>
+<span class="normal">198</span>
+<span class="normal">199</span>
+<span class="normal">200</span>
+<span class="normal">201</span>
+<span class="normal">202</span>
+<span class="normal">203</span>
+<span class="normal">204</span>
+<span class="normal">205</span>
+<span class="normal">206</span>
+<span class="normal">207</span>
+<span class="normal">208</span>
+<span class="normal">209</span>
+<span class="normal">210</span>
+<span class="normal">211</span>
+<span class="normal">212</span>
+<span class="normal">213</span>
+<span class="normal">214</span>
+<span class="normal">215</span>
+<span class="normal">216</span>
+<span class="normal">217</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">constantCanWriteOnID</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">IDIn</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span> <span class="n">signalDictIn</span><span class="p">:</span><span class="nb">dict</span><span class="p">,</span> <span class="n">period</span><span class="p">:</span><span class="nb">float</span><span class="p">,</span> <span class="n">duration</span><span class="p">:</span><span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>  
+<span class="w">    </span><span class="sd">&#39;&#39;&#39; This method provides efficient access to the CAN bus for continually writing a CAN message for an extended period of time. It keeps one instance open for the bus and writer, nulling the need to open a new instance connection for each message. It operates on a backend thread managed by python-can, but the bus has been internalized to be thread-safe, allowing several cross threads to operate concurrently on the bus. </span>
+
+<span class="sd">    It will continue sending a CAN Message on the instance bus with given ID and signalDict every period (s) for time duration (s).</span>
+
+<span class="sd">    Note: If no duration time is specified, it defaults to None, which continues indefinitely. In this case, the thread will need to be closed, or program execution halted with Keyboard Interrupt (CTRL + C).</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        IDIn (int): The ID of the CAN Message to encode and write on the bus.</span>
+<span class="sd">        signalDictIn (dict): A dictionary with signal:value pairs to encode and write on the bus.</span>
+<span class="sd">        period (float): The time in seconds (s) to wait between sending each message.</span>
+<span class="sd">        duration (float): The length of time in seconds (s) to continue sending the message for.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        bool: True if no errors occured during execution, False otherwise.</span>
+<span class="sd">    &#39;&#39;&#39;</span>          
+    <span class="c1"># Create a message and send it</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># Encode data into byte array for CAN communication using the DBC file</span>
+        <span class="c1"># [https://cantools.readthedocs.io/en/latest/#cantools.database.can.Database.encode_message]</span>
+        <span class="n">encodedData</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dbc</span><span class="o">.</span><span class="n">encode_message</span><span class="p">(</span><span class="n">IDIn</span><span class="p">,</span> <span class="n">signalDictIn</span><span class="p">)</span>
+
+        <span class="c1"># Create a message object with the ID and encoded data (assumed default message flags)</span>
+        <span class="c1"># [https://python-can.readthedocs.io/en/stable/message.html#module-can]</span>
+        <span class="n">messageOutbound</span> <span class="o">=</span> <span class="n">Message</span><span class="p">(</span><span class="n">arbitration_id</span><span class="o">=</span><span class="n">IDIn</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">encodedData</span><span class="p">)</span>
+
+        <span class="c1"># Create the periodic task</span>
+        <span class="c1"># [https://python-can.readthedocs.io/en/master/bcm.html]</span>
+        <span class="n">task</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">bus</span><span class="o">.</span><span class="n">send_periodic</span><span class="p">(</span><span class="n">msgs</span><span class="o">=</span><span class="n">messageOutbound</span><span class="p">,</span> <span class="n">period</span><span class="o">=</span><span class="n">period</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="n">duration</span><span class="p">)</span>
+        <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">task</span><span class="p">,</span> <span class="n">CyclicSendTaskABC</span><span class="p">)</span>
+        <span class="n">sleep</span><span class="p">(</span><span class="n">duration</span><span class="p">)</span>
+
+    <span class="c1"># If there is an error writing a message, this Exception is thrown</span>
+    <span class="c1"># [https://python-can.readthedocs.io/en/stable/errors.html#can.exceptions.CanOperationError]</span>
+    <span class="k">except</span> <span class="n">CanError</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CC Anti-Canape: THERE WAS AN ERROR WRITING TO THE BUS.&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Return true indicating no errors were given</span>
+    <span class="k">return</span> <span class="kc">True</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h3 id="drivers.writers.ACWriter.constantCanWriteRawOnID" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">constantCanWriteRawOnID</span><span class="p">(</span><span class="n">IDIn</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">,</span> <span class="n">period</span><span class="p">,</span> <span class="n">duration</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>This method provides efficient access to the CAN bus for continually writing a CAN message for an extended period of time. It keeps one instance open for the bus and writer, nulling the need to open a new instance connection for each message. It operates on a backend thread managed by python-can, but the bus has been internalized to be thread-safe, allowing several cross threads to operate concurrently on the bus. </p>
+<p>It will continue sending a CAN Message on the instance bus with given ID and bytes payload every period (s) for time duration (s).</p>
+<p>Note: If no duration time is specified, it defaults to None, which continues indefinitely. In this case, the thread will need to be closed, or program execution halted with Keyboard Interrupt (CTRL + C).</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>IDIn</code></td>
+          <td>
+                <code>int</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The ID of the CAN Message to write on the bus.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>bytes</code></td>
+          <td>
+                <code>str, bytearray, or list of str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The Message payload, in raw bytes. Can be given as a string, bytearray, or list of strings (where each list element is a bit of a bytearray).</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>period</code></td>
+          <td>
+                <code>float</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The time in seconds (s) to wait between sending each message.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>duration</code></td>
+          <td>
+                <code>float</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The length of time in seconds (s) to continue sending the message for.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>bool</code></td>          <td>
+                <code>bool</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>True if no errors occured during execution, False otherwise.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>drivers\writers.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">223</span>
+<span class="normal">224</span>
+<span class="normal">225</span>
+<span class="normal">226</span>
+<span class="normal">227</span>
+<span class="normal">228</span>
+<span class="normal">229</span>
+<span class="normal">230</span>
+<span class="normal">231</span>
+<span class="normal">232</span>
+<span class="normal">233</span>
+<span class="normal">234</span>
+<span class="normal">235</span>
+<span class="normal">236</span>
+<span class="normal">237</span>
+<span class="normal">238</span>
+<span class="normal">239</span>
+<span class="normal">240</span>
+<span class="normal">241</span>
+<span class="normal">242</span>
+<span class="normal">243</span>
+<span class="normal">244</span>
+<span class="normal">245</span>
+<span class="normal">246</span>
+<span class="normal">247</span>
+<span class="normal">248</span>
+<span class="normal">249</span>
+<span class="normal">250</span>
+<span class="normal">251</span>
+<span class="normal">252</span>
+<span class="normal">253</span>
+<span class="normal">254</span>
+<span class="normal">255</span>
+<span class="normal">256</span>
+<span class="normal">257</span>
+<span class="normal">258</span>
+<span class="normal">259</span>
+<span class="normal">260</span>
+<span class="normal">261</span>
+<span class="normal">262</span>
+<span class="normal">263</span>
+<span class="normal">264</span>
+<span class="normal">265</span>
+<span class="normal">266</span>
+<span class="normal">267</span>
+<span class="normal">268</span>
+<span class="normal">269</span>
+<span class="normal">270</span>
+<span class="normal">271</span>
+<span class="normal">272</span>
+<span class="normal">273</span>
+<span class="normal">274</span>
+<span class="normal">275</span>
+<span class="normal">276</span>
+<span class="normal">277</span>
+<span class="normal">278</span>
+<span class="normal">279</span>
+<span class="normal">280</span>
+<span class="normal">281</span>
+<span class="normal">282</span>
+<span class="normal">283</span>
+<span class="normal">284</span>
+<span class="normal">285</span>
+<span class="normal">286</span>
+<span class="normal">287</span>
+<span class="normal">288</span>
+<span class="normal">289</span>
+<span class="normal">290</span>
+<span class="normal">291</span>
+<span class="normal">292</span>
+<span class="normal">293</span>
+<span class="normal">294</span>
+<span class="normal">295</span>
+<span class="normal">296</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">constantCanWriteRawOnID</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">IDIn</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">:</span><span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">bytearray</span><span class="p">,</span> <span class="nb">list</span><span class="p">],</span> <span class="n">period</span><span class="p">:</span><span class="nb">float</span><span class="p">,</span> <span class="n">duration</span><span class="p">:</span><span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39; This method provides efficient access to the CAN bus for continually writing a CAN message for an extended period of time. It keeps one instance open for the bus and writer, nulling the need to open a new instance connection for each message. It operates on a backend thread managed by python-can, but the bus has been internalized to be thread-safe, allowing several cross threads to operate concurrently on the bus. </span>
+
+<span class="sd">    It will continue sending a CAN Message on the instance bus with given ID and bytes payload every period (s) for time duration (s).</span>
+
+<span class="sd">    Note: If no duration time is specified, it defaults to None, which continues indefinitely. In this case, the thread will need to be closed, or program execution halted with Keyboard Interrupt (CTRL + C).</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        IDIn (int): The ID of the CAN Message to write on the bus.</span>
+<span class="sd">        bytes (str, bytearray, or list of str): The Message payload, in raw bytes. Can be given as a string, bytearray, or list of strings (where each list element is a bit of a bytearray).</span>
+<span class="sd">        period (float): The time in seconds (s) to wait between sending each message.</span>
+<span class="sd">        duration (float): The length of time in seconds (s) to continue sending the message for.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        bool: True if no errors occured during execution, False otherwise.</span>
+<span class="sd">    &#39;&#39;&#39;</span> 
+    <span class="c1"># Create a message and send it</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># If data input is given as bytearray</span>
+        <span class="c1"># [https://docs.python.org/3/library/stdtypes.html#bytearray]</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">bytes</span><span class="p">,</span> <span class="nb">bytearray</span><span class="p">):</span>
+            <span class="c1"># Create a message object with the ID and byte array</span>
+            <span class="c1"># [https://python-can.readthedocs.io/en/stable/message.html#module-can]</span>
+            <span class="n">messageOutbound</span> <span class="o">=</span> <span class="n">Message</span><span class="p">(</span><span class="n">arbitration_id</span><span class="o">=</span><span class="n">IDIn</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="nb">bytes</span><span class="p">,</span> <span class="n">is_extended_id</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+        <span class="c1"># If data input is given as string</span>
+        <span class="c1"># [https://docs.python.org/3/library/stdtypes.html#bytearray.fromhex]</span>
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">bytes</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+            <span class="c1"># Create a message object with the ID and string</span>
+            <span class="c1"># [https://python-can.readthedocs.io/en/stable/message.html#module-can]</span>
+            <span class="n">stringAsByteArray</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="o">.</span><span class="n">fromhex</span><span class="p">(</span><span class="nb">bytes</span><span class="p">)</span>
+            <span class="n">messageOutbound</span> <span class="o">=</span> <span class="n">Message</span><span class="p">(</span><span class="n">arbitration_id</span><span class="o">=</span><span class="n">IDIn</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">stringAsByteArray</span><span class="p">,</span> <span class="n">is_extended_id</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+        <span class="c1"># If data input is given as list</span>
+        <span class="c1"># [https://www.dotnetperls.com/bytes-python]</span>
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">bytes</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+            <span class="c1"># If list is composed of integers</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">bytes</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nb">int</span><span class="p">):</span>
+                <span class="c1"># Create a message object with the ID and list</span>
+                <span class="c1"># [https://python-can.readthedocs.io/en/stable/message.html#module-can]</span>
+                <span class="n">listAsByteArray</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="p">(</span><span class="nb">bytes</span><span class="p">)</span>
+                <span class="n">messageOutbound</span> <span class="o">=</span> <span class="n">Message</span><span class="p">(</span><span class="n">arbitration_id</span><span class="o">=</span><span class="n">IDIn</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">listAsByteArray</span><span class="p">,</span> <span class="n">is_extended_id</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+            <span class="c1"># If list is composed of strings</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">bytes</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nb">str</span><span class="p">):</span>
+                <span class="c1"># Create a message object with the ID and list</span>
+                <span class="c1"># [https://python-can.readthedocs.io/en/stable/message.html#module-can]</span>
+                <span class="n">listAsString</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">bytes</span><span class="p">)</span>
+                <span class="n">listAsStringAsByteArray</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="o">.</span><span class="n">fromhex</span><span class="p">(</span><span class="n">listAsString</span><span class="p">)</span>
+                <span class="n">messageOutbound</span> <span class="o">=</span> <span class="n">Message</span><span class="p">(</span><span class="n">arbitration_id</span><span class="o">=</span><span class="n">IDIn</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">listAsStringAsByteArray</span><span class="p">,</span> <span class="n">is_extended_id</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+            <span class="c1">#If list is composed of NEITHER int NOR str</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CC Anti-Canape: Got an incorrect format for the input of bytes!&quot;</span><span class="p">)</span>
+                <span class="k">raise</span> <span class="n">CanError</span><span class="p">(</span><span class="n">message</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CC Anti-Canape: Got an incorrect format for the input of bytes!&quot;</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="n">CanError</span><span class="p">(</span><span class="n">message</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Create the periodic task</span>
+        <span class="c1"># [https://python-can.readthedocs.io/en/master/bcm.html]</span>
+        <span class="n">task</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">bus</span><span class="o">.</span><span class="n">send_periodic</span><span class="p">(</span><span class="n">msgs</span><span class="o">=</span><span class="n">messageOutbound</span><span class="p">,</span> <span class="n">period</span><span class="o">=</span><span class="n">period</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="n">duration</span><span class="p">)</span>
+        <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">task</span><span class="p">,</span> <span class="n">CyclicSendTaskABC</span><span class="p">)</span>
+        <span class="n">sleep</span><span class="p">(</span><span class="n">duration</span><span class="p">)</span>
+
+    <span class="c1"># If there is an error writing a message, this Exception is thrown</span>
+    <span class="c1"># [https://python-can.readthedocs.io/en/stable/errors.html#can.exceptions.CanOperationError]</span>
+    <span class="k">except</span> <span class="n">CanError</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CC AntiCanape: THERE WAS AN ERROR WRITING TO THE BUS.&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">False</span>
+
+    <span class="c1"># Return true indicating no errors were given</span>
+    <span class="k">return</span> <span class="kc">True</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h3 id="drivers.writers.ACWriter.loadDotParser" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">loadDotParser</span><span class="p">(</span><span class="n">dotParser</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>This method is designed to load a DOT parser object into the writer instance for use with SDO messages. Specifically, it is used in singleSdoWrite() and constantSdoWrite() to lookup a hex index for a given SDO parameter name.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>dotParser</code></td>
+          <td>
+                <code>dotParse Object</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>A dotParse() object to be used for looking up hex ID's and parameter names.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>bool</code></td>          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>True if no errors occured during execution, False otherwise.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>drivers\writers.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">302</span>
+<span class="normal">303</span>
+<span class="normal">304</span>
+<span class="normal">305</span>
+<span class="normal">306</span>
+<span class="normal">307</span>
+<span class="normal">308</span>
+<span class="normal">309</span>
+<span class="normal">310</span>
+<span class="normal">311</span>
+<span class="normal">312</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">loadDotParser</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dotParser</span><span class="p">:</span><span class="nb">object</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39; This method is designed to load a DOT parser object into the writer instance for use with SDO messages. Specifically, it is used in singleSdoWrite() and constantSdoWrite() to lookup a hex index for a given SDO parameter name.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        dotParser (dotParse Object): A dotParse() object to be used for looking up hex ID&#39;s and parameter names.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        bool: True if no errors occured during execution, False otherwise.</span>
+<span class="sd">    &#39;&#39;&#39;</span>        
+    <span class="bp">self</span><span class="o">.</span><span class="n">dotParser</span> <span class="o">=</span> <span class="n">dotParser</span>
+    <span class="k">return</span> <span class="kc">True</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h3 id="drivers.writers.ACWriter.singleCanWriteOnID" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">singleCanWriteOnID</span><span class="p">(</span><span class="n">IDIn</span><span class="p">,</span> <span class="n">signalDictIn</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>This method encodes an ID and signal dictionary into a CAN Message Object and sends it on the instance CAN bus.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>IDIn</code></td>
+          <td>
+                <code>int</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The ID of the Message to send.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>signalDictIn</code></td>
+          <td>
+                <code>dict</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>A dictionary of signal:value pairs to write.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>bool</code></td>          <td>
+                <code>bool</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>True if no errors occured during execution, False otherwise.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>drivers\writers.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span>
+<span class="normal">73</span>
+<span class="normal">74</span>
+<span class="normal">75</span>
+<span class="normal">76</span>
+<span class="normal">77</span>
+<span class="normal">78</span>
+<span class="normal">79</span>
+<span class="normal">80</span>
+<span class="normal">81</span>
+<span class="normal">82</span>
+<span class="normal">83</span>
+<span class="normal">84</span>
+<span class="normal">85</span>
+<span class="normal">86</span>
+<span class="normal">87</span>
+<span class="normal">88</span>
+<span class="normal">89</span>
+<span class="normal">90</span>
+<span class="normal">91</span>
+<span class="normal">92</span>
+<span class="normal">93</span>
+<span class="normal">94</span>
+<span class="normal">95</span>
+<span class="normal">96</span>
+<span class="normal">97</span>
+<span class="normal">98</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">singleCanWriteOnID</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">IDIn</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span> <span class="n">signalDictIn</span><span class="p">:</span><span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39; This method encodes an ID and signal dictionary into a CAN Message Object and sends it on the instance CAN bus.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        IDIn (int): The ID of the Message to send.</span>
+<span class="sd">        signalDictIn (dict): A dictionary of signal:value pairs to write.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        bool: True if no errors occured during execution, False otherwise.</span>
+<span class="sd">    &#39;&#39;&#39;</span>        
+    <span class="c1"># Create a message and send it</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># Encode data into byte array for CAN communication using the DBC file</span>
+        <span class="c1"># [https://cantools.readthedocs.io/en/latest/#cantools.database.can.Database.encode_message]</span>
+        <span class="n">encodedData</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dbc</span><span class="o">.</span><span class="n">encode_message</span><span class="p">(</span><span class="n">IDIn</span><span class="p">,</span> <span class="n">signalDictIn</span><span class="p">)</span>
+
+        <span class="c1"># Create a message object with the ID and encoded data (assumed default message flags)</span>
+        <span class="c1"># [https://python-can.readthedocs.io/en/stable/message.html#module-can]</span>
+        <span class="n">messageOutbound</span> <span class="o">=</span> <span class="n">Message</span><span class="p">(</span><span class="n">arbitration_id</span><span class="o">=</span><span class="n">IDIn</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">encodedData</span><span class="p">,</span> <span class="n">is_extended_id</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+        <span class="c1">#Send the message on the bus</span>
+        <span class="c1"># [https://python-can.readthedocs.io/en/stable/bus.html#can.Bus.send]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">bus</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">msg</span><span class="o">=</span><span class="n">messageOutbound</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+
+    <span class="c1"># If there is an error writing a message, this Exception is thrown</span>
+    <span class="c1"># [https://python-can.readthedocs.io/en/stable/errors.html#can.exceptions.CanOperationError]</span>
+    <span class="k">except</span> <span class="n">CanError</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CC Anti-Canape: THERE WAS AN ERROR WRITING TO THE BUS.&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Return true indicating no errors were given</span>
+    <span class="k">return</span> <span class="kc">True</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h3 id="drivers.writers.ACWriter.singleCanWriteRawOnID" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">singleCanWriteRawOnID</span><span class="p">(</span><span class="n">IDIn</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>This method encodes an ID and raw byte array into a CAN Message Object and sends it on the instance CAN bus.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>IDIn</code></td>
+          <td>
+                <code>int</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The ID of the Message to send.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>bytes</code></td>
+          <td>
+                <code>str, bytearray, or list of strings</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The Message payload, in raw bytes. Can be given as a string, bytearray, or list of strings (where each list element is a byte of a bytearray).</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Raises:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><span title="can.CanError">CanError</span></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Occurs when there is an error while attempting to communicate via CAN.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+                <code><span title="can.CanError">CanError</span></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Occurs when there is an error while attempting to communicate via CAN.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>bool</code></td>          <td>
+                <code>bool</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>True if no errors occured during execution, False otherwise.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>drivers\writers.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span>
+<span class="normal">145</span>
+<span class="normal">146</span>
+<span class="normal">147</span>
+<span class="normal">148</span>
+<span class="normal">149</span>
+<span class="normal">150</span>
+<span class="normal">151</span>
+<span class="normal">152</span>
+<span class="normal">153</span>
+<span class="normal">154</span>
+<span class="normal">155</span>
+<span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span>
+<span class="normal">159</span>
+<span class="normal">160</span>
+<span class="normal">161</span>
+<span class="normal">162</span>
+<span class="normal">163</span>
+<span class="normal">164</span>
+<span class="normal">165</span>
+<span class="normal">166</span>
+<span class="normal">167</span>
+<span class="normal">168</span>
+<span class="normal">169</span>
+<span class="normal">170</span>
+<span class="normal">171</span>
+<span class="normal">172</span>
+<span class="normal">173</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">singleCanWriteRawOnID</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">IDIn</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">:</span><span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">bytearray</span><span class="p">,</span> <span class="nb">list</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39;This method encodes an ID and raw byte array into a CAN Message Object and sends it on the instance CAN bus.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        IDIn (int): The ID of the Message to send.</span>
+<span class="sd">        bytes (str, bytearray, or list of strings): The Message payload, in raw bytes. Can be given as a string, bytearray, or list of strings (where each list element is a byte of a bytearray).</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        CanError: Occurs when there is an error while attempting to communicate via CAN.</span>
+<span class="sd">        CanError: Occurs when there is an error while attempting to communicate via CAN.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        bool: True if no errors occured during execution, False otherwise.</span>
+<span class="sd">    &#39;&#39;&#39;</span>        
+    <span class="c1"># Create a message and send it</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># If data input is given as bytearray</span>
+        <span class="c1"># [https://docs.python.org/3/library/stdtypes.html#bytearray]</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">bytes</span><span class="p">,</span> <span class="nb">bytearray</span><span class="p">):</span>
+            <span class="c1"># Create a message object with the ID and byte array</span>
+            <span class="c1"># [https://python-can.readthedocs.io/en/stable/message.html#module-can]</span>
+            <span class="n">messageOutbound</span> <span class="o">=</span> <span class="n">Message</span><span class="p">(</span><span class="n">arbitration_id</span><span class="o">=</span><span class="n">IDIn</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="nb">bytes</span><span class="p">,</span> <span class="n">is_extended_id</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+        <span class="c1"># If data input is given as string</span>
+        <span class="c1"># [https://docs.python.org/3/library/stdtypes.html#bytearray.fromhex]</span>
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">bytes</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+            <span class="c1"># Create a message object with the ID and string</span>
+            <span class="c1"># [https://python-can.readthedocs.io/en/stable/message.html#module-can]</span>
+            <span class="n">stringAsByteArray</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="o">.</span><span class="n">fromhex</span><span class="p">(</span><span class="nb">bytes</span><span class="p">)</span>
+            <span class="n">messageOutbound</span> <span class="o">=</span> <span class="n">Message</span><span class="p">(</span><span class="n">arbitration_id</span><span class="o">=</span><span class="n">IDIn</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">stringAsByteArray</span><span class="p">,</span> <span class="n">is_extended_id</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+        <span class="c1"># If data input is given as list</span>
+        <span class="c1"># [https://www.dotnetperls.com/bytes-python]</span>
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">bytes</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+            <span class="c1"># If list is composed of integers</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">bytes</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nb">int</span><span class="p">):</span>
+                <span class="c1"># Create a message object with the ID and list</span>
+                <span class="c1"># [https://python-can.readthedocs.io/en/stable/message.html#module-can]</span>
+                <span class="n">listAsByteArray</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="p">(</span><span class="nb">bytes</span><span class="p">)</span>
+                <span class="n">messageOutbound</span> <span class="o">=</span> <span class="n">Message</span><span class="p">(</span><span class="n">arbitration_id</span><span class="o">=</span><span class="n">IDIn</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">listAsByteArray</span><span class="p">,</span> <span class="n">is_extended_id</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+            <span class="c1"># If list is composed of strings</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">bytes</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nb">str</span><span class="p">):</span>
+                <span class="c1"># Create a message object with the ID and list</span>
+                <span class="c1"># [https://python-can.readthedocs.io/en/stable/message.html#module-can]</span>
+                <span class="n">listAsString</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">bytes</span><span class="p">)</span>
+                <span class="n">listAsStringAsByteArray</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="o">.</span><span class="n">fromhex</span><span class="p">(</span><span class="n">listAsString</span><span class="p">)</span>
+                <span class="n">messageOutbound</span> <span class="o">=</span> <span class="n">Message</span><span class="p">(</span><span class="n">arbitration_id</span><span class="o">=</span><span class="n">IDIn</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">listAsStringAsByteArray</span><span class="p">,</span> <span class="n">is_extended_id</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+            <span class="c1">#If list is composed of NEITHER int NOR str</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CC Anti-Canape: Got an incorrect format for the input of bytes!&quot;</span><span class="p">)</span>
+                <span class="k">raise</span> <span class="n">CanError</span><span class="p">(</span><span class="n">message</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CC Anti-Canape: Got an incorrect format for the input of bytes!&quot;</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="n">CanError</span><span class="p">(</span><span class="n">message</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+        <span class="c1">#Send the message on the bus</span>
+        <span class="c1"># [https://python-can.readthedocs.io/en/stable/bus.html#can.Bus.send]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">bus</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">msg</span><span class="o">=</span><span class="n">messageOutbound</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+    <span class="c1"># If there is an error writing a message, this Exception is thrown</span>
+    <span class="c1"># [https://python-can.readthedocs.io/en/stable/errors.html#can.exceptions.CanOperationError]</span>
+    <span class="k">except</span> <span class="n">CanError</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CC Anti-Canape: THERE WAS AN ERROR WRITING TO THE BUS.&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">False</span>
+
+    <span class="c1"># Return true indicating no errors were given</span>
+    <span class="k">return</span> <span class="kc">True</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h3 id="drivers.writers.ACWriter.singleSdoWrite" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">singleSdoWrite</span><span class="p">(</span><span class="n">mainId</span><span class="p">,</span> <span class="n">payloadIn</span><span class="p">,</span> <span class="n">subId</span><span class="o">=</span><span class="s1">&#39;00&#39;</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>This method is designed to write a single SDO message on the CANBUS.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>mainId</code></td>
+          <td>
+                <code>str or int</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The SDO Index (ID) to write to. It can either be a hex index starting with '0x', a decimal index only consisting of integers, or the parameter name itself as a string.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>payloadIn</code></td>
+          <td>
+                <code>int</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The payload to send off in decimal representation. Can represent 0-8 bits when converted to hex. </p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>subId</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The SDO Sub-Index(Sub-ID) to write to. It must be in hex. Defaults to "00".</p>
+            </div>
+          </td>
+          <td>
+                <code>&#39;00&#39;</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Raises:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>Exception</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>If the payload is not 0-8 bytes, then an exception is thrown.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>bool</code></td>          <td>
+                <code>bool</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>True if no errors occured during execution, False otherwise.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+          <details class="quote">
+            <summary>Source code in <code>drivers\writers.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">318</span>
+<span class="normal">319</span>
+<span class="normal">320</span>
+<span class="normal">321</span>
+<span class="normal">322</span>
+<span class="normal">323</span>
+<span class="normal">324</span>
+<span class="normal">325</span>
+<span class="normal">326</span>
+<span class="normal">327</span>
+<span class="normal">328</span>
+<span class="normal">329</span>
+<span class="normal">330</span>
+<span class="normal">331</span>
+<span class="normal">332</span>
+<span class="normal">333</span>
+<span class="normal">334</span>
+<span class="normal">335</span>
+<span class="normal">336</span>
+<span class="normal">337</span>
+<span class="normal">338</span>
+<span class="normal">339</span>
+<span class="normal">340</span>
+<span class="normal">341</span>
+<span class="normal">342</span>
+<span class="normal">343</span>
+<span class="normal">344</span>
+<span class="normal">345</span>
+<span class="normal">346</span>
+<span class="normal">347</span>
+<span class="normal">348</span>
+<span class="normal">349</span>
+<span class="normal">350</span>
+<span class="normal">351</span>
+<span class="normal">352</span>
+<span class="normal">353</span>
+<span class="normal">354</span>
+<span class="normal">355</span>
+<span class="normal">356</span>
+<span class="normal">357</span>
+<span class="normal">358</span>
+<span class="normal">359</span>
+<span class="normal">360</span>
+<span class="normal">361</span>
+<span class="normal">362</span>
+<span class="normal">363</span>
+<span class="normal">364</span>
+<span class="normal">365</span>
+<span class="normal">366</span>
+<span class="normal">367</span>
+<span class="normal">368</span>
+<span class="normal">369</span>
+<span class="normal">370</span>
+<span class="normal">371</span>
+<span class="normal">372</span>
+<span class="normal">373</span>
+<span class="normal">374</span>
+<span class="normal">375</span>
+<span class="normal">376</span>
+<span class="normal">377</span>
+<span class="normal">378</span>
+<span class="normal">379</span>
+<span class="normal">380</span>
+<span class="normal">381</span>
+<span class="normal">382</span>
+<span class="normal">383</span>
+<span class="normal">384</span>
+<span class="normal">385</span>
+<span class="normal">386</span>
+<span class="normal">387</span>
+<span class="normal">388</span>
+<span class="normal">389</span>
+<span class="normal">390</span>
+<span class="normal">391</span>
+<span class="normal">392</span>
+<span class="normal">393</span>
+<span class="normal">394</span>
+<span class="normal">395</span>
+<span class="normal">396</span>
+<span class="normal">397</span>
+<span class="normal">398</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">singleSdoWrite</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mainId</span><span class="p">:</span><span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">],</span> <span class="n">payloadIn</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span> <span class="n">subId</span><span class="p">:</span><span class="nb">str</span><span class="o">=</span><span class="s2">&quot;00&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39; This method is designed to write a single SDO message on the CANBUS.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        mainId (str or int): The SDO Index (ID) to write to. It can either be a hex index starting with &#39;0x&#39;, a decimal index only consisting of integers, or the parameter name itself as a string.</span>
+<span class="sd">        payloadIn (int): The payload to send off in decimal representation. Can represent 0-8 bits when converted to hex. </span>
+<span class="sd">        subId (str): The SDO Sub-Index(Sub-ID) to write to. It must be in hex. Defaults to &quot;00&quot;.</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        Exception: If the payload is not 0-8 bytes, then an exception is thrown.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        bool: True if no errors occured during execution, False otherwise.</span>
+<span class="sd">    &#39;&#39;&#39;</span>       
+
+    <span class="c1"># Redefine the ID to be a string for checking</span>
+    <span class="n">strId</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">mainId</span><span class="p">)</span>
+
+    <span class="c1"># Initialize a blank splitHexId for Endian conversion</span>
+    <span class="n">hexId</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+
+    <span class="c1"># Initialize a hexPayload for conversion and finalPayload for post-conversion</span>
+    <span class="c1"># Chop off &#39;0x&#39; from front of hex string</span>
+    <span class="n">hexPayload</span> <span class="o">=</span> <span class="nb">hex</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">payloadIn</span><span class="p">))[</span><span class="mi">2</span><span class="p">:]</span>
+    <span class="n">finalPayload</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+
+    <span class="c1"># If the id begins with &#39;0x&#39;, it is hex ID</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">strId</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;0&#39;</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">strId</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;x&#39;</span><span class="p">):</span>
+        <span class="n">hexId</span> <span class="o">=</span> <span class="n">strId</span>
+
+    <span class="c1"># If the id is all numbers, it is decimal</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">strId</span><span class="o">.</span><span class="n">isdigit</span><span class="p">()):</span>
+        <span class="c1"># Convert to int and save</span>
+        <span class="n">hexId</span> <span class="o">=</span> <span class="nb">hex</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">strId</span><span class="p">))</span>
+
+    <span class="c1"># Else, it is a parameter name, so call for hex ID</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1"># If the DOT parser has not been loaded, tell user to load it first</span>
+        <span class="k">if</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dotParser</span> <span class="o">==</span> <span class="kc">None</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CC Anti-Canape: Please load DOT parser before writing using parameter names!&quot;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="kc">False</span>
+
+        <span class="c1"># If the DOT parser has been loaded, use it to find hex ID</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">hexId</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dotParser</span><span class="o">.</span><span class="n">getHexIdFromParameterName</span><span class="p">(</span><span class="n">strId</span><span class="p">)</span>
+
+    <span class="c1"># Add initial write command identifier to payload</span>
+    <span class="n">finalPayload</span> <span class="o">+=</span> <span class="s2">&quot;23&quot;</span>
+
+    <span class="c1"># Convert to Little Endian and add to final payload </span>
+    <span class="n">finalPayload</span> <span class="o">+=</span> <span class="n">hexId</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexId</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexId</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexId</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+
+    <span class="c1"># Add the sub index to the final payload</span>
+    <span class="n">finalPayload</span> <span class="o">+=</span> <span class="n">subId</span>
+
+    <span class="c1"># Check the size of payloadIn and make proper bytestring</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">hexPayload</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+        <span class="n">finalPayload</span> <span class="o">+=</span> <span class="s2">&quot;00000000&quot;</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">hexPayload</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">finalPayload</span> <span class="o">+=</span> <span class="s2">&quot;0&quot;</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;000000&quot;</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">hexPayload</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">):</span>
+        <span class="n">finalPayload</span> <span class="o">+=</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;000000&quot;</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">hexPayload</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span><span class="p">):</span>
+        <span class="n">finalPayload</span> <span class="o">+=</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;0&quot;</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;0000&quot;</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">hexPayload</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span><span class="p">):</span>
+        <span class="n">finalPayload</span> <span class="o">+=</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;0000&quot;</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">hexPayload</span><span class="p">)</span> <span class="o">==</span> <span class="mi">5</span><span class="p">):</span>
+        <span class="n">finalPayload</span> <span class="o">+=</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;0&quot;</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;00&quot;</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">hexPayload</span><span class="p">)</span> <span class="o">==</span> <span class="mi">6</span><span class="p">):</span>
+        <span class="n">finalPayload</span> <span class="o">+=</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;00&quot;</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">hexPayload</span><span class="p">)</span> <span class="o">==</span> <span class="mi">7</span><span class="p">):</span>
+        <span class="n">finalPayload</span> <span class="o">+=</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;0&quot;</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">hexPayload</span><span class="p">)</span> <span class="o">==</span> <span class="mi">8</span><span class="p">):</span>
+        <span class="n">finalPayload</span> <span class="o">+=</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">hexPayload</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+
+    <span class="c1"># If the input payload was not 0-8 bits, raise exception </span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;CC Anti-Canape: Payload must be between 0 and 8 bits!&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Send the message</span>
+    <span class="k">return</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">singleCanWriteRawOnID</span><span class="p">(</span><span class="n">IDIn</span><span class="o">=</span><span class="mi">1589</span><span class="p">,</span> <span class="nb">bytes</span><span class="o">=</span><span class="n">finalPayload</span><span class="p">))</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.81fa17fe.min.js"></script>
+      
+    
+  </body>
+</html>
